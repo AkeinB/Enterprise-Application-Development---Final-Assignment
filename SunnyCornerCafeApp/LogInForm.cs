@@ -27,6 +27,8 @@ namespace SunnyCornerCafeApp
             var registerForm = new SignUpForm();
             registerForm.Show();
 
+            this.Hide();
+
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -35,6 +37,13 @@ namespace SunnyCornerCafeApp
             {
                 Application.Exit();
             }
+        }
+
+        private void BTN_Login_Click(object sender, EventArgs e)
+        {
+            var mainForm = new MainWindow();
+            mainForm.Show();
+
         }
     }
 

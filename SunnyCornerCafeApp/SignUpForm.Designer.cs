@@ -125,6 +125,7 @@
             this.LB_SignInHere.Size = new System.Drawing.Size(198, 26);
             this.LB_SignInHere.TabIndex = 9;
             this.LB_SignInHere.Text = "Already Have An Account? Sign In Here\r\n\r\n";
+            this.LB_SignInHere.Click += new System.EventHandler(this.LB_SignInHere_Click);
             // 
             // BTN_SignUp
             // 

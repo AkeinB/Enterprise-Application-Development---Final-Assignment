@@ -24,5 +24,13 @@ namespace SunnyCornerCafeApp
                 Application.Exit();
             }
         }
+
+        private void LB_SignInHere_Click(object sender, EventArgs e)
+        {
+            var loginForm = new LogInForm();
+            loginForm.Show();
+
+            this.Hide();
+        }
     }
 }

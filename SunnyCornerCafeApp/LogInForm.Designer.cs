@@ -52,12 +52,15 @@
             // 
             // LB_WelcomeBack
             // 
+            this.LB_WelcomeBack.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LB_WelcomeBack.AutoSize = true;
-            this.LB_WelcomeBack.Location = new System.Drawing.Point(104, 238);
+            this.LB_WelcomeBack.Location = new System.Drawing.Point(116, 238);
             this.LB_WelcomeBack.Name = "LB_WelcomeBack";
-            this.LB_WelcomeBack.Size = new System.Drawing.Size(80, 13);
+            this.LB_WelcomeBack.Size = new System.Drawing.Size(52, 13);
             this.LB_WelcomeBack.TabIndex = 1;
-            this.LB_WelcomeBack.Text = "Welcome Back";
+            this.LB_WelcomeBack.Text = "Welcome";
             // 
             // LB_UserName
             // 
@@ -99,6 +102,7 @@
             this.BTN_Login.TabIndex = 6;
             this.BTN_Login.Text = "LOGIN";
             this.BTN_Login.UseVisualStyleBackColor = true;
+            this.BTN_Login.Click += new System.EventHandler(this.BTN_Login_Click);
             // 
             // LB_RegisterHere
             // 
