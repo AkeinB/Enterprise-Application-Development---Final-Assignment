@@ -17,20 +17,21 @@ namespace SunnyCornerCafeApp
             InitializeComponent();
         }
 
-        private void BT_Close_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
-
         private void LB_SignInHere_Click(object sender, EventArgs e)
         {
             var loginForm = new LogInForm();
             loginForm.Show();
 
             this.Hide();
+        }
+
+        private void BTN_SignUp_Click(object sender, EventArgs e)
+        {
+            //Perform Authentication here, if successful
+
+            //set DialogResult to OK to allow the main form to open
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }

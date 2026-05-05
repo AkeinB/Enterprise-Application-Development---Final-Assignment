@@ -15,8 +15,11 @@ namespace SunnyCornerCafeApp
         public LogInForm()
         {
             InitializeComponent();
+           
         }
 
+        //Method to confirm exit when the user tries to close the form
+       
         private void LogInForm_Load(object sender, EventArgs e)
         {
 
@@ -31,18 +34,13 @@ namespace SunnyCornerCafeApp
 
         }
 
-        private void close_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
-
         private void BTN_Login_Click(object sender, EventArgs e)
         {
-            var mainForm = new MainWindow();
-            mainForm.Show();
+            //Perform Authentication here, if successful
+
+            //set DialogResult to OK to allow the main form to open
+            this.DialogResult = DialogResult.OK;
+            this.Close();
 
         }
     }
