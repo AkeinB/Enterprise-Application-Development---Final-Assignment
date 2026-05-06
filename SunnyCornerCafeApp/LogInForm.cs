@@ -78,7 +78,9 @@ namespace SunnyCornerCafeApp
                 }
                 else
                 {
-                    var mainForm = new MainWindow(this);
+                    var role = user.UserRoles.FirstOrDefault();
+                    var roleShortName = role.Role.ShortName;
+                    var mainForm = new MainWindow(this,roleShortName, null);
                     mainForm.Show();
                     this.Hide();
                 }

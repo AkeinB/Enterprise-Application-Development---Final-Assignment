@@ -5,13 +5,17 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d3073f170dd7491e9649be68dbf9738f" Name="Diagram1">
-        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Cart" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Category" Width="1.5" PointX="2.75" PointY="0.75" />
-        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Contact" Width="1.5" PointX="0.75" PointY="3.75" />
-        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Order" Width="1.5" PointX="2.75" PointY="3.75" />
-        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Payment" Width="1.5" PointX="4.75" PointY="0.75" />
-        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Product" Width="1.5" PointX="4.75" PointY="4.75" />
-        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.User" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Cart" Width="1.5" PointX="8.375" PointY="1.5" />
+        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Category" Width="1.5" PointX="8.875" PointY="4.375" />
+        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Contact" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Order" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Payment" Width="1.5" PointX="6.625" PointY="7" />
+        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Product" Width="1.5" PointX="9" PointY="6.875" />
+        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Role" Width="1.5" PointX="0.75" PointY="5.625" />
+        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.UserRole" Width="1.5" PointX="3" PointY="1.5" />
+        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.User" Width="1.5" PointX="0.75" PointY="1" />
+        <AssociationConnector Association="SunnyCornerCafeWebsite_DBModel.FK_UserRoles_Roles" />
+        <AssociationConnector Association="SunnyCornerCafeWebsite_DBModel.FK_UserRoles_Users" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

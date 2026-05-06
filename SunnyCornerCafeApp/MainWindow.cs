@@ -13,6 +13,8 @@ namespace SunnyCornerCafeApp
     public partial class MainWindow : Form
     {
         private readonly LogInForm _logInForm;
+        private readonly SignUpForm _signUpForm;
+        public string _roleName;
         public MainWindow()
         {
             InitializeComponent();
@@ -20,11 +22,13 @@ namespace SunnyCornerCafeApp
 
         }
 
-        public MainWindow(LogInForm logInForm)
+        public MainWindow(LogInForm logInForm = null, string roleShortName = null , SignUpForm signUpForm = null )
         {
             InitializeComponent();
             this.FormClosing += new FormClosingEventHandler(MainWindow_FormClosing); // Attach the FormClosing event handler
             _logInForm = logInForm;
+            _signUpForm = signUpForm;
+            _roleName = roleShortName;
         }
 
         private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
@@ -39,6 +43,11 @@ namespace SunnyCornerCafeApp
             }
             else
             {
+                if(_logInForm != null && !_logInForm.IsDisposed)
+                _logInForm.Close();
+
+                if (_signUpForm != null && !_signUpForm.IsDisposed)
+                    _signUpForm.Close();
                 //close all other open forms when the main window is closed
                 foreach (Form form in Application.OpenForms.Cast<Form>().ToList())
                 {
@@ -49,9 +58,13 @@ namespace SunnyCornerCafeApp
             
         }
 
-        private void MainWindow_FormClosing_1(object sender, FormClosingEventArgs e)
+        //checks what type of user logged in and adjust what they can see or do
+        private void MainWindow_Load(object sender, EventArgs e)
         {
-            _logInForm.Close();
+            if(_roleName != "admin")
+            {
+                managerUsersToolStripMenuItem.Visible = false;
+            }
         }
     }
 }

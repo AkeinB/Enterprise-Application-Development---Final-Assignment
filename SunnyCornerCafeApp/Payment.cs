@@ -14,7 +14,7 @@ namespace SunnyCornerCafeApp
     
     public partial class Payment
     {
-        public int PaymentId { get; set; }
+        public int id { get; set; }
         public string Name { get; set; }
         public string CardNo { get; set; }
         public string ExpiryDate { get; set; }

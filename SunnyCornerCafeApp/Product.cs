@@ -14,7 +14,7 @@ namespace SunnyCornerCafeApp
     
     public partial class Product
     {
-        public int ProductId { get; set; }
+        public int id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public Nullable<decimal> Price { get; set; }

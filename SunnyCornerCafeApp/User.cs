@@ -14,7 +14,13 @@ namespace SunnyCornerCafeApp
     
     public partial class User
     {
-        public int UserId { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public User()
+        {
+            this.UserRoles = new HashSet<UserRole>();
+        }
+    
+        public int id { get; set; }
         public string Name { get; set; }
         public string Username { get; set; }
         public string Mobile { get; set; }
@@ -23,5 +29,9 @@ namespace SunnyCornerCafeApp
         public string Password { get; set; }
         public string ImageUrl { get; set; }
         public System.DateTime CreatedDate { get; set; }
+        public bool IsActive { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UserRole> UserRoles { get; set; }
     }
 }

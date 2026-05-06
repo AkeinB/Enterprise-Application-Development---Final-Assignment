@@ -14,7 +14,7 @@ namespace SunnyCornerCafeApp
     
     public partial class Contact
     {
-        public int ContactId { get; set; }
+        public int id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Subject { get; set; }

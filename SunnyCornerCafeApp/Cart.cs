@@ -14,7 +14,7 @@ namespace SunnyCornerCafeApp
     
     public partial class Cart
     {
-        public int CartId { get; set; }
+        public int id { get; set; }
         public Nullable<int> ProductId { get; set; }
         public Nullable<int> Quantity { get; set; }
         public Nullable<int> UserId { get; set; }

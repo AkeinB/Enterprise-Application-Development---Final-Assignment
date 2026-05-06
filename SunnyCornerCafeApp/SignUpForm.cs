@@ -102,7 +102,9 @@ namespace SunnyCornerCafeApp
                         Username = userName,
                         Email = email,
                         Password = hashedPassword,
-                        CreatedDate = DateTime.Now
+                        CreatedDate = DateTime.Now,
+                        //UserRoles = 3,
+                        IsActive = true
                     };
 
                     sunnyDB.Users.Add(newUser);
@@ -113,7 +115,8 @@ namespace SunnyCornerCafeApp
                     var LoginForm = new LogInForm();
                     LoginForm.ShowDialog();
                     this.Hide();
-
+                    
+                    var MainWindow = new MainWindow(null, null ,this);
                 }
 
                 

@@ -32,13 +32,14 @@
             this.userProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.BTN_Menu = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.IB_MainImage = new System.Windows.Forms.PictureBox();
             this.ordersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.managerUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.BTN_Menu = new System.Windows.Forms.Button();
+            this.IB_MainImage = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IB_MainImage)).BeginInit();
@@ -47,7 +48,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.userProfileToolStripMenuItem});
+            this.userProfileToolStripMenuItem,
+            this.managerUsersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -76,6 +78,18 @@
             this.ordersToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.ordersToolStripMenuItem.Text = "Edit Profile";
             // 
+            // ordersToolStripMenuItem1
+            // 
+            this.ordersToolStripMenuItem1.Name = "ordersToolStripMenuItem1";
+            this.ordersToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
+            this.ordersToolStripMenuItem1.Text = "Orders";
+            // 
+            // managerUsersToolStripMenuItem
+            // 
+            this.managerUsersToolStripMenuItem.Name = "managerUsersToolStripMenuItem";
+            this.managerUsersToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.managerUsersToolStripMenuItem.Text = "Manager Users";
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
@@ -93,23 +107,14 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // BTN_Menu
+            // button4
             // 
-            this.BTN_Menu.Location = new System.Drawing.Point(3, 3);
-            this.BTN_Menu.Name = "BTN_Menu";
-            this.BTN_Menu.Size = new System.Drawing.Size(75, 23);
-            this.BTN_Menu.TabIndex = 0;
-            this.BTN_Menu.Text = "Menu";
-            this.BTN_Menu.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(103, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Book Table";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button4.Location = new System.Drawing.Point(103, 53);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -120,14 +125,23 @@
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button2
             // 
-            this.button4.Location = new System.Drawing.Point(103, 53);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(103, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Book Table";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // BTN_Menu
+            // 
+            this.BTN_Menu.Location = new System.Drawing.Point(3, 3);
+            this.BTN_Menu.Name = "BTN_Menu";
+            this.BTN_Menu.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Menu.TabIndex = 0;
+            this.BTN_Menu.Text = "Menu";
+            this.BTN_Menu.UseVisualStyleBackColor = true;
             // 
             // IB_MainImage
             // 
@@ -136,12 +150,6 @@
             this.IB_MainImage.Size = new System.Drawing.Size(100, 50);
             this.IB_MainImage.TabIndex = 2;
             this.IB_MainImage.TabStop = false;
-            // 
-            // ordersToolStripMenuItem1
-            // 
-            this.ordersToolStripMenuItem1.Name = "ordersToolStripMenuItem1";
-            this.ordersToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
-            this.ordersToolStripMenuItem1.Text = "Orders";
             // 
             // MainWindow
             // 
@@ -157,6 +165,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sunny Corner Cafe";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindow_FormClosing_1);
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -179,5 +188,6 @@
         private System.Windows.Forms.Button BTN_Menu;
         private System.Windows.Forms.PictureBox IB_MainImage;
         private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem managerUsersToolStripMenuItem;
     }
 }
