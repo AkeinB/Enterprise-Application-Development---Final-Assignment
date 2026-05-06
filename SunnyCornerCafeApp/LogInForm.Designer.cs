@@ -81,6 +81,7 @@
             // 
             this.TB_Password.Location = new System.Drawing.Point(24, 301);
             this.TB_Password.Name = "TB_Password";
+            this.TB_Password.PasswordChar = '*';
             this.TB_Password.Size = new System.Drawing.Size(251, 20);
             this.TB_Password.TabIndex = 5;
             // 
@@ -134,6 +135,7 @@
             // 
             // LogInForm
             // 
+            this.AcceptButton = this.BTN_Login;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 516);
@@ -151,7 +153,6 @@
             this.Name = "LogInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.LogInForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PB_SignInImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

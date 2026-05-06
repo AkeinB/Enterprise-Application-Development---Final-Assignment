@@ -12,11 +12,19 @@ namespace SunnyCornerCafeApp
 {
     public partial class MainWindow : Form
     {
+        private readonly LogInForm _logInForm;
         public MainWindow()
         {
             InitializeComponent();
             this.FormClosing += new FormClosingEventHandler(MainWindow_FormClosing); // Attach the FormClosing event handler
 
+        }
+
+        public MainWindow(LogInForm logInForm)
+        {
+            InitializeComponent();
+            this.FormClosing += new FormClosingEventHandler(MainWindow_FormClosing); // Attach the FormClosing event handler
+            _logInForm = logInForm;
         }
 
         private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
@@ -39,6 +47,11 @@ namespace SunnyCornerCafeApp
                 }
             }
             
+        }
+
+        private void MainWindow_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            _logInForm.Close();
         }
     }
 }
