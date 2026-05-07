@@ -66,21 +66,19 @@ namespace SunnyCornerCafeApp
                 // Get the final hashed password as a string
                 var hashedPassword = sb.ToString();
 
-                // Query the database to find a user with the provided username and hashed password
+                // Query the database to find a user with the provided username, hashed password and active flag
                 var user = sunnyDB.Users.FirstOrDefault(u =>
-                    u.Username == userName && u.Password == hashedPassword);
+                    u.Username == userName && u.Password == hashedPassword && u.IsActive == true);
 
 
                 if (user == null)
                 {
-                    MessageBox.Show("Invalid username or password. Please try again.");
+                    MessageBox.Show("Please provide valid credentials");
 
                 }
                 else
                 {
-                    var role = user.UserRoles.FirstOrDefault();
-                    var roleShortName = role.Role.ShortName;
-                    var mainForm = new MainWindow(this,roleShortName, null);
+                    var mainForm = new MainWindow(this,user, null);
                     mainForm.Show();
                     this.Hide();
                 }

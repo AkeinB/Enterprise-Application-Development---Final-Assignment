@@ -15,6 +15,7 @@ namespace SunnyCornerCafeApp
         private readonly LogInForm _logInForm;
         private readonly SignUpForm _signUpForm;
         public string _roleName;
+        public User _user;
         public MainWindow()
         {
             InitializeComponent();
@@ -22,13 +23,14 @@ namespace SunnyCornerCafeApp
 
         }
 
-        public MainWindow(LogInForm logInForm = null, string roleShortName = null , SignUpForm signUpForm = null )
+        public MainWindow(LogInForm logInForm = null, User user = null , SignUpForm signUpForm = null )
         {
             InitializeComponent();
             this.FormClosing += new FormClosingEventHandler(MainWindow_FormClosing); // Attach the FormClosing event handler
             _logInForm = logInForm;
             _signUpForm = signUpForm;
-            _roleName = roleShortName;
+            _user = user;
+            _roleName = user.UserRoles.FirstOrDefault().Role.ShortName;
         }
 
         private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
@@ -64,6 +66,20 @@ namespace SunnyCornerCafeApp
             if(_roleName != "admin")
             {
                 managerUsersToolStripMenuItem.Visible = false;
+            }
+        }
+
+        private void logOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to Log Out?",
+                "Confirm Exit", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                var LogInForm = new LogInForm(this);
+                LogInForm.Show();
+                this.Hide();
             }
         }
     }
