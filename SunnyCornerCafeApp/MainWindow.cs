@@ -77,7 +77,7 @@ namespace SunnyCornerCafeApp
 
             if (result == DialogResult.Yes)
             {
-                var LogInForm = new LogInForm(this);
+                var LogInForm = new LogInForm();
                 LogInForm.Show();
                 this.Hide();
             }

@@ -132,6 +132,7 @@
             this.CHB_ShowPW.TabIndex = 9;
             this.CHB_ShowPW.Text = "Show Password";
             this.CHB_ShowPW.UseVisualStyleBackColor = true;
+            this.CHB_ShowPW.CheckedChanged += new System.EventHandler(this.CHB_ShowPW_CheckedChanged);
             // 
             // LogInForm
             // 

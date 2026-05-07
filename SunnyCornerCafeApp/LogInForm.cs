@@ -89,8 +89,19 @@ namespace SunnyCornerCafeApp
                 MessageBox.Show("Please enter your username and password.");
             }
 
-           
+        }
 
+        private void CHB_ShowPW_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CHB_ShowPW.Checked)
+            {
+                TB_Password.PasswordChar = '\0'; //shows plain text
+                
+            }
+            else
+            {
+                TB_Password.PasswordChar = '*';
+            }
         }
     }
 
