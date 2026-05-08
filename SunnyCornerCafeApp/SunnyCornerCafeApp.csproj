@@ -84,6 +84,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookTable.Designer.cs">
+      <DependentUpon>BookTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cart.cs">
       <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
     </Compile>
@@ -92,6 +98,12 @@
     </Compile>
     <Compile Include="Contact.cs">
       <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EditInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInformation.Designer.cs">
+      <DependentUpon>EditInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="LogInForm.cs">
       <SubType>Form</SubType>
@@ -105,8 +117,20 @@
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Order.cs">
       <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
     </Compile>
     <Compile Include="Payment.cs">
       <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
@@ -143,14 +167,44 @@
     <Compile Include="User.cs">
       <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="UserCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCart.Designer.cs">
+      <DependentUpon>UserCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInformation.Designer.cs">
+      <DependentUpon>UserInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPayment.Designer.cs">
+      <DependentUpon>UserPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserRole.cs">
       <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BookTable.resx">
+      <DependentUpon>BookTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditInformation.resx">
+      <DependentUpon>EditInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -164,6 +218,15 @@
     </Compile>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCart.resx">
+      <DependentUpon>UserCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInformation.resx">
+      <DependentUpon>UserInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPayment.resx">
+      <DependentUpon>UserPayment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

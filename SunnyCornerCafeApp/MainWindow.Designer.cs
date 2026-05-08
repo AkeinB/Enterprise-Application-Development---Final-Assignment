@@ -37,6 +37,14 @@
             this.ordersToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managerUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BT_Orders = new System.Windows.Forms.Button();
+            this.BT_Cart = new System.Windows.Forms.Button();
+            this.BT_BookTable = new System.Windows.Forms.Button();
+            this.BT_HDrinks = new System.Windows.Forms.Button();
+            this.BT_CDrinks = new System.Windows.Forms.Button();
+            this.BT_Pastries = new System.Windows.Forms.Button();
+            this.BT_Deli = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +59,7 @@
             this.managerUsersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(767, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -69,18 +77,21 @@
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
             this.accountToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.accountToolStripMenuItem.Text = "Account Information";
+            this.accountToolStripMenuItem.Click += new System.EventHandler(this.accountToolStripMenuItem_Click);
             // 
             // ordersToolStripMenuItem
             // 
             this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
             this.ordersToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.ordersToolStripMenuItem.Text = "Edit Profile";
+            this.ordersToolStripMenuItem.Click += new System.EventHandler(this.ordersToolStripMenuItem_Click);
             // 
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // bookTableToolStripMenuItem
             // 
@@ -106,12 +117,96 @@
             this.managerUsersToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
             this.managerUsersToolStripMenuItem.Text = "Manager Users";
             // 
+            // BT_Orders
+            // 
+            this.BT_Orders.Location = new System.Drawing.Point(32, 278);
+            this.BT_Orders.Name = "BT_Orders";
+            this.BT_Orders.Size = new System.Drawing.Size(145, 38);
+            this.BT_Orders.TabIndex = 2;
+            this.BT_Orders.Text = "Orders";
+            this.BT_Orders.UseVisualStyleBackColor = true;
+            this.BT_Orders.Click += new System.EventHandler(this.BT_Orders_Click);
+            // 
+            // BT_Cart
+            // 
+            this.BT_Cart.Location = new System.Drawing.Point(32, 331);
+            this.BT_Cart.Name = "BT_Cart";
+            this.BT_Cart.Size = new System.Drawing.Size(145, 38);
+            this.BT_Cart.TabIndex = 3;
+            this.BT_Cart.Text = "Cart";
+            this.BT_Cart.UseVisualStyleBackColor = true;
+            this.BT_Cart.Click += new System.EventHandler(this.BT_Cart_Click);
+            // 
+            // BT_BookTable
+            // 
+            this.BT_BookTable.Location = new System.Drawing.Point(32, 384);
+            this.BT_BookTable.Name = "BT_BookTable";
+            this.BT_BookTable.Size = new System.Drawing.Size(145, 38);
+            this.BT_BookTable.TabIndex = 4;
+            this.BT_BookTable.Text = "Book Table";
+            this.BT_BookTable.UseVisualStyleBackColor = true;
+            this.BT_BookTable.Click += new System.EventHandler(this.BT_BookTable_Click);
+            // 
+            // BT_HDrinks
+            // 
+            this.BT_HDrinks.Location = new System.Drawing.Point(445, 79);
+            this.BT_HDrinks.Name = "BT_HDrinks";
+            this.BT_HDrinks.Size = new System.Drawing.Size(150, 177);
+            this.BT_HDrinks.TabIndex = 5;
+            this.BT_HDrinks.Text = "Hot Drinks";
+            this.BT_HDrinks.UseVisualStyleBackColor = true;
+            // 
+            // BT_CDrinks
+            // 
+            this.BT_CDrinks.Location = new System.Drawing.Point(601, 79);
+            this.BT_CDrinks.Name = "BT_CDrinks";
+            this.BT_CDrinks.Size = new System.Drawing.Size(150, 177);
+            this.BT_CDrinks.TabIndex = 6;
+            this.BT_CDrinks.Text = "Cold Drinks";
+            this.BT_CDrinks.UseVisualStyleBackColor = true;
+            // 
+            // BT_Pastries
+            // 
+            this.BT_Pastries.Location = new System.Drawing.Point(601, 262);
+            this.BT_Pastries.Name = "BT_Pastries";
+            this.BT_Pastries.Size = new System.Drawing.Size(150, 177);
+            this.BT_Pastries.TabIndex = 7;
+            this.BT_Pastries.Text = "Pastries";
+            this.BT_Pastries.UseVisualStyleBackColor = true;
+            // 
+            // BT_Deli
+            // 
+            this.BT_Deli.Location = new System.Drawing.Point(445, 262);
+            this.BT_Deli.Name = "BT_Deli";
+            this.BT_Deli.Size = new System.Drawing.Size(150, 177);
+            this.BT_Deli.TabIndex = 8;
+            this.BT_Deli.Text = "Deli";
+            this.BT_Deli.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("a Auto Signature", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(219, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(172, 16);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "WELCOME     TO";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(767, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BT_Deli);
+            this.Controls.Add(this.BT_Pastries);
+            this.Controls.Add(this.BT_CDrinks);
+            this.Controls.Add(this.BT_HDrinks);
+            this.Controls.Add(this.BT_BookTable);
+            this.Controls.Add(this.BT_Cart);
+            this.Controls.Add(this.BT_Orders);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -137,5 +232,13 @@
         private System.Windows.Forms.ToolStripMenuItem bookTableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem cartToolStripMenuItem;
+        private System.Windows.Forms.Button BT_Orders;
+        private System.Windows.Forms.Button BT_Cart;
+        private System.Windows.Forms.Button BT_BookTable;
+        private System.Windows.Forms.Button BT_HDrinks;
+        private System.Windows.Forms.Button BT_CDrinks;
+        private System.Windows.Forms.Button BT_Pastries;
+        private System.Windows.Forms.Button BT_Deli;
+        private System.Windows.Forms.Label label1;
     }
 }

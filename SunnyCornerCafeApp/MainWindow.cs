@@ -82,5 +82,41 @@ namespace SunnyCornerCafeApp
                 this.Hide();
             }
         }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var menu= new Menu();
+            menu.Show();
+        }
+
+        private void BT_Orders_Click(object sender, EventArgs e)
+        {
+            var orders = new Orders();
+            orders.Show();
+        }
+
+        private void BT_BookTable_Click(object sender, EventArgs e)
+        {
+            var booktable = new BookTable();
+            booktable.Show();
+        }
+
+        private void BT_Cart_Click(object sender, EventArgs e)
+        {
+            var cart = new UserCart();
+            cart.Show();
+        }
+
+        private void accountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var profile  = new UserInformation();
+            profile.Show();
+        }
+
+        private void ordersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var editprofile = new EditInformation();
+            editprofile.Show();
+        }
     }
 }
