@@ -23,7 +23,8 @@ namespace SunnyCornerCafeApp
 
         private void LB_SignInHere_Click(object sender, EventArgs e)
         {
-            var loginForm = new LogInForm();
+
+            var loginForm = new LogInForm(this);
             loginForm.Show();
 
             this.Hide();
@@ -40,12 +41,13 @@ namespace SunnyCornerCafeApp
                 //collects information entered by user
                 var userName = TB_UserName.Text.Trim();
                 var email = TB_Email.Text.Trim();
-                var password = TB_Password.Text;
-                var confirmPassword = TB_ConfirmPassword.Text;
+                var password = Utils.HashPassword(TB_Password.Text);
+                var confirmPassword = Utils.HashPassword(TB_ConfirmPassword.Text);
 
 
                 //checks if any field is empty
-                if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword))
+                if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password)
+                    || string.IsNullOrEmpty(confirmPassword))
                 {
                     MessageBox.Show("Please fill in all fields.");
                     return;
@@ -75,48 +77,36 @@ namespace SunnyCornerCafeApp
 
                 }
 
-             
-                // Convert the password to a byte array and compute the hash
-                byte[] passwordBytes = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
-
-                // collects bytes and converts them to a string
-                StringBuilder sb = new StringBuilder();
-
-
-
-                // Loops through and convert each byte to a hexadecimal string and append it to the StringBuilder
-                for (int i = 0; i < passwordBytes.Length; i++)
-                {
-                    sb.Append(passwordBytes[i].ToString("x2")); // Convert byte to hexadecimal string
-                }
-
-                // Get the final hashed password as a string
-                var hashedPassword = sb.ToString();
-
-
-
                 //creates new user and saves to database if username is unique and password is confirmed
                 if (user == null && password == confirmPassword) {
                     var newUser = new User
                     {
                         Username = userName,
                         Email = email,
-                        Password = hashedPassword,
+                        Password = password,
                         CreatedDate = DateTime.Now,
-                        //UserRoles = 3,
                         IsActive = true
                     };
-
                     sunnyDB.Users.Add(newUser);
+                    sunnyDB.SaveChanges();
+
+                    var newUserId = newUser.id;
+
+                    var userRoles = new UserRole
+                    {
+                        RoleId = 3,
+                        UserId = newUserId
+                    };
+                    sunnyDB.UserRoles.Add(userRoles);
                     sunnyDB.SaveChanges();
 
                     MessageBox.Show("User registered successfully!", "Success", MessageBoxButtons.OK);
 
-                    var LoginForm = new LogInForm();
-                    LoginForm.ShowDialog();
+                    var LoginForm = new LogInForm(this);
+                    LoginForm.Show();
                     this.Hide();
                     
-                    var MainWindow = new MainWindow(null, null ,this);
+                    //var MainWindow = new MainWindow(null, null ,this);
                 }
 
                 

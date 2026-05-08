@@ -103,8 +103,9 @@
             // managerUsersToolStripMenuItem
             // 
             this.managerUsersToolStripMenuItem.Name = "managerUsersToolStripMenuItem";
-            this.managerUsersToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
-            this.managerUsersToolStripMenuItem.Text = "Manager Users";
+            this.managerUsersToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.managerUsersToolStripMenuItem.Text = "Manage Users";
+            this.managerUsersToolStripMenuItem.Click += new System.EventHandler(this.managerUsersToolStripMenuItem_Click);
             // 
             // MainWindow
             // 

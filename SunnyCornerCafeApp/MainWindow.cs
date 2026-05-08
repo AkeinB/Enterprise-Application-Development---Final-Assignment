@@ -69,18 +69,10 @@ namespace SunnyCornerCafeApp
             }
         }
 
-        private void logOToolStripMenuItem_Click(object sender, EventArgs e)
+        private void managerUsersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure you want to Log Out?",
-                "Confirm Exit", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                var LogInForm = new LogInForm();
-                LogInForm.Show();
-                this.Hide();
-            }
+            var manageUser = new ManageUsers();
+            manageUser.ShowDialog();
         }
     }
 }
