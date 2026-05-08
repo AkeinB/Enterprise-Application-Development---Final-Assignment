@@ -37,6 +37,7 @@
             this.ordersToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managerUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +60,8 @@
             // 
             this.userProfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.accountToolStripMenuItem,
-            this.ordersToolStripMenuItem});
+            this.ordersToolStripMenuItem,
+            this.logoutToolStripMenuItem});
             this.userProfileToolStripMenuItem.Name = "userProfileToolStripMenuItem";
             this.userProfileToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.userProfileToolStripMenuItem.Text = "User Profile";
@@ -107,6 +109,13 @@
             this.managerUsersToolStripMenuItem.Text = "Manage Users";
             this.managerUsersToolStripMenuItem.Click += new System.EventHandler(this.managerUsersToolStripMenuItem_Click);
             // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.logoutToolStripMenuItem.Text = "Log out";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,5 +147,6 @@
         private System.Windows.Forms.ToolStripMenuItem bookTableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem cartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }

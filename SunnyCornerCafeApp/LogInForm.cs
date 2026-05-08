@@ -63,7 +63,7 @@ namespace SunnyCornerCafeApp
                 if (user == null)
                 {
                     MessageBox.Show("Please provide valid credentials");
-
+                    return;
                 }
                 else
                 {

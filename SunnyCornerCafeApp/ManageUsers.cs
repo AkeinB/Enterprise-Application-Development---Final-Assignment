@@ -21,11 +21,18 @@ namespace SunnyCornerCafeApp
 
         private void BTN_AddNewUser_Click(object sender, EventArgs e)
         {
-            if(!Utils.FormIsOpen("AddNewUser"))
+            try
             {
-                var addUser = new AddUser();
-                addUser.Show();
+                var addUser = new AddUser(this);
+                addUser.ShowDialog();
             }
+            catch (Exception)
+            {
+
+                throw;
+            }
+               
+            
         }
 
         private void BTN_ResetPassword_Click(object sender, EventArgs e)
@@ -60,11 +67,11 @@ namespace SunnyCornerCafeApp
             var id = (int)GV_UserList.SelectedRows[0].Cells["id"].Value;
 
             //query database for record
-            var Userid = sunnyDB.Users.FirstOrDefault( c => c.id == id);
+            //var Userid = sunnyDB.Users.FirstOrDefault( c => c.id == id);
 
-            //Launch AddEditUser window with data
-            var addEditRentalRecord = new AddUser();
-            addEditRentalRecord.Show();
+            //Launch EditUser window with data
+            var EditUser = new EditUser(this, id);
+            EditUser.ShowDialog();
 
         }
 
@@ -81,7 +88,7 @@ namespace SunnyCornerCafeApp
             }
         }
 
-        private void PopulateGrid()
+        public void PopulateGrid()
         {
             var users = sunnyDB.Users.Select(r => new
             {

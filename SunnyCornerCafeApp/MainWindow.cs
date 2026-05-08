@@ -59,6 +59,19 @@ namespace SunnyCornerCafeApp
             }
             
         }
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           DialogResult result = MessageBox.Show("Are you sure you want to log out?",
+            "Confirm Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                var loginForm = new LogInForm();
+                loginForm.Show();
+                _user = null;
+            }
+        }
 
         //checks what type of user logged in and adjust what they can see or do
         private void MainWindow_Load(object sender, EventArgs e)
@@ -74,5 +87,7 @@ namespace SunnyCornerCafeApp
             var manageUser = new ManageUsers();
             manageUser.ShowDialog();
         }
+
+       
     }
 }

@@ -106,7 +106,6 @@ namespace SunnyCornerCafeApp
                     LoginForm.Show();
                     this.Hide();
                     
-                    //var MainWindow = new MainWindow(null, null ,this);
                 }
 
                 
