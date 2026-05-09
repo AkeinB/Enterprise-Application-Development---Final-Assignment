@@ -32,6 +32,7 @@
             this.BTN_ResetPassword = new System.Windows.Forms.Button();
             this.BTN_AddNewUser = new System.Windows.Forms.Button();
             this.GV_UserList = new System.Windows.Forms.DataGridView();
+            this.BTN_Close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GV_UserList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,12 +80,23 @@
             this.GV_UserList.Size = new System.Drawing.Size(332, 426);
             this.GV_UserList.TabIndex = 18;
             // 
+            // BTN_Close
+            // 
+            this.BTN_Close.Location = new System.Drawing.Point(35, 389);
+            this.BTN_Close.Name = "BTN_Close";
+            this.BTN_Close.Size = new System.Drawing.Size(106, 30);
+            this.BTN_Close.TabIndex = 22;
+            this.BTN_Close.Text = "Close";
+            this.BTN_Close.UseVisualStyleBackColor = true;
+            this.BTN_Close.Click += new System.EventHandler(this.BTN_Close_Click);
+            // 
             // ManageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(551, 450);
+            this.Controls.Add(this.BTN_Close);
             this.Controls.Add(this.BTN_EditUser);
             this.Controls.Add(this.BTN_ResetPassword);
             this.Controls.Add(this.BTN_AddNewUser);
@@ -104,5 +116,6 @@
         private System.Windows.Forms.Button BTN_ResetPassword;
         private System.Windows.Forms.Button BTN_AddNewUser;
         private System.Windows.Forms.DataGridView GV_UserList;
+        private System.Windows.Forms.Button BTN_Close;
     }
 }

@@ -108,5 +108,10 @@ namespace SunnyCornerCafeApp
             // to make it more dynamic. 
             GV_UserList.Columns["id"].Visible = false;
         }
+
+        private void BTN_Close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
