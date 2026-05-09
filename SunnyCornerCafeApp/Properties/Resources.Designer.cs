@@ -59,5 +59,15 @@ namespace SunnyCornerCafeApp.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _292_2924858_user_icon_business_man_flat_png_transparent_png {
+            get {
+                object obj = ResourceManager.GetObject("292-2924858_user-icon-business-man-flat-png-transparent-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

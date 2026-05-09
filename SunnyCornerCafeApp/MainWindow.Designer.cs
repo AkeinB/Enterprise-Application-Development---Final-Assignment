@@ -45,6 +45,7 @@
             this.BT_Pastries = new System.Windows.Forms.Button();
             this.BT_Deli = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +68,8 @@
             // 
             this.userProfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.accountToolStripMenuItem,
-            this.ordersToolStripMenuItem});
+            this.ordersToolStripMenuItem,
+            this.logoutToolStripMenuItem});
             this.userProfileToolStripMenuItem.Name = "userProfileToolStripMenuItem";
             this.userProfileToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.userProfileToolStripMenuItem.Text = "User Profile";
@@ -114,8 +116,16 @@
             // managerUsersToolStripMenuItem
             // 
             this.managerUsersToolStripMenuItem.Name = "managerUsersToolStripMenuItem";
-            this.managerUsersToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
-            this.managerUsersToolStripMenuItem.Text = "Manager Users";
+            this.managerUsersToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.managerUsersToolStripMenuItem.Text = "Manage Users";
+            this.managerUsersToolStripMenuItem.Click += new System.EventHandler(this.managerUsersToolStripMenuItem_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.logoutToolStripMenuItem.Text = "Log out";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // BT_Orders
             // 
@@ -240,5 +250,6 @@
         private System.Windows.Forms.Button BT_Pastries;
         private System.Windows.Forms.Button BT_Deli;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }

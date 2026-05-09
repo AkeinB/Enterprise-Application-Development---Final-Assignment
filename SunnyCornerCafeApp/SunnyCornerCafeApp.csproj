@@ -90,20 +90,32 @@
     <Compile Include="BookTable.Designer.cs">
       <DependentUpon>BookTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cart.cs">
-      <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Category.cs">
-      <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Contact.cs">
-      <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="EditInformation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditInformation.Designer.cs">
       <DependentUpon>EditInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
     </Compile>
     <Compile Include="LogInForm.cs">
       <SubType>Form</SubType>
@@ -123,8 +135,14 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageUsers.Designer.cs">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Order.cs">
-      <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Orders.cs">
       <SubType>Form</SubType>
@@ -132,16 +150,24 @@
     <Compile Include="Orders.Designer.cs">
       <DependentUpon>Orders.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderDetail.cs">
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Payment.cs">
-      <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
-      <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Role.cs">
-      <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="SignUpForm.cs">
       <SubType>Form</SubType>
@@ -149,23 +175,23 @@
     <Compile Include="SignUpForm.Designer.cs">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SunnyCornerCafeDB.Context.cs">
+    <Compile Include="SunnyCornerCafeWebsite_DB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SunnyCornerCafeDB.Context.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="SunnyCornerCafeDB.cs">
+    <Compile Include="SunnyCornerCafeWebsite_DB.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
     </Compile>
-    <Compile Include="SunnyCornerCafeDB.Designer.cs">
+    <Compile Include="SunnyCornerCafeWebsite_DB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SunnyCornerCafeDB.edmx</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.edmx</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
-      <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="UserCart.cs">
       <SubType>Form</SubType>
@@ -186,13 +212,20 @@
       <DependentUpon>UserPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="UserRole.cs">
-      <DependentUpon>SunnyCornerCafeDB.tt</DependentUpon>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="BookTable.resx">
       <DependentUpon>BookTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditInformation.resx">
       <DependentUpon>EditInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
@@ -206,16 +239,14 @@
     <EmbeddedResource Include="Orders.resx">
       <DependentUpon>Orders.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageUsers.resx">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,34 +269,34 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="SunnyCornerCafeDB.edmx">
+    <EntityDeploy Include="SunnyCornerCafeWebsite_DB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SunnyCornerCafeDB.Designer.cs</LastGenOutput>
+      <LastGenOutput>SunnyCornerCafeWebsite_DB.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="SunnyCornerCafeDB.edmx.diagram">
-      <DependentUpon>SunnyCornerCafeDB.edmx</DependentUpon>
+    <None Include="SunnyCornerCafeWebsite_DB.edmx.diagram">
+      <DependentUpon>SunnyCornerCafeWebsite_DB.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\square off.png" />
-    <Content Include="SunnyCornerCafeDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SunnyCornerCafeDB.edmx</DependentUpon>
-      <LastGenOutput>SunnyCornerCafeDB.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="SunnyCornerCafeDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SunnyCornerCafeDB.edmx</DependentUpon>
-      <LastGenOutput>SunnyCornerCafeDB.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\292-2924858_user-icon-business-man-flat-png-transparent-png.png" />
+    <Content Include="SunnyCornerCafeWebsite_DB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.edmx</DependentUpon>
+      <LastGenOutput>SunnyCornerCafeWebsite_DB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SunnyCornerCafeWebsite_DB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SunnyCornerCafeWebsite_DB.edmx</DependentUpon>
+      <LastGenOutput>SunnyCornerCafeWebsite_DB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

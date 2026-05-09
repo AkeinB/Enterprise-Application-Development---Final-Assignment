@@ -14,14 +14,20 @@ namespace SunnyCornerCafeApp
     public partial class LogInForm : Form
     {
         private readonly SunnyCornerCafeWebsite_DBEntities sunnyDB;
+        private readonly SignUpForm _signUpForm;
         public LogInForm()
         {
             InitializeComponent();
             sunnyDB = new SunnyCornerCafeWebsite_DBEntities();
         }
+        public LogInForm(SignUpForm signUp)
+        {
+            InitializeComponent();
+            sunnyDB = new SunnyCornerCafeWebsite_DBEntities();
+            _signUpForm = signUp;
+        }
 
-                   
-       
+
         private void LogInForm_Load(object sender, EventArgs e)
         {
 
@@ -29,6 +35,7 @@ namespace SunnyCornerCafeApp
 
         private void LB_RegisterHere_Click(object sender, EventArgs e)
         {
+
             var registerForm = new SignUpForm();
             registerForm.Show();
 
@@ -44,37 +51,19 @@ namespace SunnyCornerCafeApp
 
 
                 var userName = TB_UserName.Text.Trim();
-                var password = TB_Password.Text;
+                var password = Utils.HashPassword(TB_Password.Text);
 
 
-                // Convert the password to a byte array and compute the hash
-                byte[] passwordBytes = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
-
-
-
-                // collects bytes and converts them to a string
-                StringBuilder sb = new StringBuilder();
-
-
-
-                // Loops through and convert each byte to a hexadecimal string and append it to the StringBuilder
-                for (int i = 0; i < passwordBytes.Length; i++)
-                {
-                    sb.Append(passwordBytes[i].ToString("x2")); // Convert byte to hexadecimal string
-                }
-
-                // Get the final hashed password as a string
-                var hashedPassword = sb.ToString();
-
+                
                 // Query the database to find a user with the provided username, hashed password and active flag
                 var user = sunnyDB.Users.FirstOrDefault(u =>
-                    u.Username == userName && u.Password == hashedPassword && u.IsActive == true);
+                    u.Username == userName && u.Password == password && u.IsActive == true);
 
 
                 if (user == null)
                 {
                     MessageBox.Show("Please provide valid credentials");
-
+                    return;
                 }
                 else
                 {
