@@ -7,7 +7,7 @@
       <Diagram DiagramId="4531f247dfac48528f2db6bafe14f192" Name="Diagram1">
         <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Cart" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Category" Width="1.5" PointX="1.5" PointY="13.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Contact" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Contact" Width="1.5" PointX="5.625" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.OrderDetail" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Order" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="SunnyCornerCafeWebsite_DBModel.Payment" Width="1.5" PointX="3.75" PointY="8.375" IsExpanded="true" />
