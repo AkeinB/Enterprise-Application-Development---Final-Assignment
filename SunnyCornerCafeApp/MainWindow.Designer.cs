@@ -32,6 +32,7 @@
             this.userProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,7 +46,6 @@
             this.BT_Pastries = new System.Windows.Forms.Button();
             this.BT_Deli = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +88,13 @@
             this.ordersToolStripMenuItem.Text = "Edit Profile";
             this.ordersToolStripMenuItem.Click += new System.EventHandler(this.ordersToolStripMenuItem_Click);
             // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.logoutToolStripMenuItem.Text = "Log out";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
@@ -119,13 +126,6 @@
             this.managerUsersToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
             this.managerUsersToolStripMenuItem.Text = "Manage Users";
             this.managerUsersToolStripMenuItem.Click += new System.EventHandler(this.managerUsersToolStripMenuItem_Click);
-            // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-            this.logoutToolStripMenuItem.Text = "Log out";
-            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // BT_Orders
             // 
@@ -218,7 +218,6 @@
             this.Controls.Add(this.BT_Cart);
             this.Controls.Add(this.BT_Orders);
             this.Controls.Add(this.menuStrip1);
-            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

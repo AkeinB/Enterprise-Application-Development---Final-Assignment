@@ -28,70 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LB_Current = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.LB_Orders = new System.Windows.Forms.Label();
+            this.GV_OrderList = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.BTN_NewOrder = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.GV_OrderList)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // LB_Current
+            // LB_Orders
             // 
-            this.LB_Current.AutoSize = true;
-            this.LB_Current.Location = new System.Drawing.Point(21, 13);
-            this.LB_Current.Name = "LB_Current";
-            this.LB_Current.Size = new System.Drawing.Size(35, 13);
-            this.LB_Current.TabIndex = 0;
-            this.LB_Current.Text = "label1";
+            this.LB_Orders.AutoSize = true;
+            this.LB_Orders.Location = new System.Drawing.Point(299, 9);
+            this.LB_Orders.Name = "LB_Orders";
+            this.LB_Orders.Size = new System.Drawing.Size(38, 13);
+            this.LB_Orders.TabIndex = 0;
+            this.LB_Orders.Text = "Orders";
             // 
-            // label2
+            // GV_OrderList
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(114, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.GV_OrderList.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.GV_OrderList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GV_OrderList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GV_OrderList.Location = new System.Drawing.Point(15, 41);
+            this.GV_OrderList.Name = "GV_OrderList";
+            this.GV_OrderList.Size = new System.Drawing.Size(638, 306);
+            this.GV_OrderList.TabIndex = 1;
             // 
-            // panel1
+            // groupBox1
             // 
-            this.panel1.Controls.Add(this.LB_Current);
-            this.panel1.Location = new System.Drawing.Point(88, 48);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(214, 368);
-            this.panel1.TabIndex = 2;
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.BTN_NewOrder);
+            this.groupBox1.Location = new System.Drawing.Point(168, 353);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(296, 68);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
             // 
-            // panel2
+            // button2
             // 
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(536, 46);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(211, 369);
-            this.panel2.TabIndex = 3;
+            this.button2.Location = new System.Drawing.Point(160, 15);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(90, 38);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // BTN_NewOrder
+            // 
+            this.BTN_NewOrder.Location = new System.Drawing.Point(46, 15);
+            this.BTN_NewOrder.Name = "BTN_NewOrder";
+            this.BTN_NewOrder.Size = new System.Drawing.Size(90, 38);
+            this.BTN_NewOrder.TabIndex = 4;
+            this.BTN_NewOrder.Text = "New Order";
+            this.BTN_NewOrder.UseVisualStyleBackColor = true;
+            this.BTN_NewOrder.Click += new System.EventHandler(this.button1_Click);
             // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(680, 450);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.GV_OrderList);
+            this.Controls.Add(this.LB_Orders);
             this.Name = "Orders";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Orders";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.Load += new System.EventHandler(this.Orders_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.GV_OrderList)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label LB_Current;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label LB_Orders;
+        private System.Windows.Forms.DataGridView GV_OrderList;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BTN_NewOrder;
     }
 }
