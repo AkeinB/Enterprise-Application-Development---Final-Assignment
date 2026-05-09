@@ -33,13 +33,13 @@
             this.TB_UserName = new System.Windows.Forms.TextBox();
             this.LB_UserName = new System.Windows.Forms.Label();
             this.LB_WelcomeToParadise = new System.Windows.Forms.Label();
-            this.PB_SignInImage = new System.Windows.Forms.PictureBox();
             this.LB_SignInHere = new System.Windows.Forms.Label();
             this.BTN_SignUp = new System.Windows.Forms.Button();
             this.TB_ConfirmPassword = new System.Windows.Forms.TextBox();
             this.LB_ConfirmPassword = new System.Windows.Forms.Label();
             this.TB_Email = new System.Windows.Forms.TextBox();
             this.LB_Email = new System.Windows.Forms.Label();
+            this.PB_SignInImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_SignInImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,14 +84,6 @@
             this.LB_WelcomeToParadise.Size = new System.Drawing.Size(146, 13);
             this.LB_WelcomeToParadise.TabIndex = 7;
             this.LB_WelcomeToParadise.Text = "Welcome to Slice of Paradise";
-            // 
-            // PB_SignInImage
-            // 
-            this.PB_SignInImage.Location = new System.Drawing.Point(88, 36);
-            this.PB_SignInImage.Name = "PB_SignInImage";
-            this.PB_SignInImage.Size = new System.Drawing.Size(112, 113);
-            this.PB_SignInImage.TabIndex = 6;
-            this.PB_SignInImage.TabStop = false;
             // 
             // LB_SignInHere
             // 
@@ -145,6 +137,16 @@
             this.LB_Email.Size = new System.Drawing.Size(32, 13);
             this.LB_Email.TabIndex = 15;
             this.LB_Email.Text = "Email";
+            // 
+            // PB_SignInImage
+            // 
+            this.PB_SignInImage.Image = global::SunnyCornerCafeApp.Properties.Resources._292_2924858_user_icon_business_man_flat_png_transparent_png;
+            this.PB_SignInImage.Location = new System.Drawing.Point(88, 36);
+            this.PB_SignInImage.Name = "PB_SignInImage";
+            this.PB_SignInImage.Size = new System.Drawing.Size(112, 113);
+            this.PB_SignInImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_SignInImage.TabIndex = 6;
+            this.PB_SignInImage.TabStop = false;
             // 
             // SignUpForm
             // 

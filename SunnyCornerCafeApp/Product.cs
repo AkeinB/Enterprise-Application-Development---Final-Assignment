@@ -14,14 +14,27 @@ namespace SunnyCornerCafeApp
     
     public partial class Product
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Product()
+        {
+            this.Carts = new HashSet<Cart>();
+            this.OrderDetails = new HashSet<OrderDetail>();
+        }
+    
         public int id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public Nullable<decimal> Price { get; set; }
-        public Nullable<int> Quantity { get; set; }
+        public decimal Price { get; set; }
+        public int Quantity { get; set; }
         public string ImageUrl { get; set; }
-        public Nullable<int> CategoryId { get; set; }
+        public int CategoryId { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Cart> Carts { get; set; }
+        public virtual Category Category { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

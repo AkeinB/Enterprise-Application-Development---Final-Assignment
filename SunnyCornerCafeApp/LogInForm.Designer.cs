@@ -36,16 +36,17 @@
             this.LB_Password = new System.Windows.Forms.Label();
             this.BTN_Login = new System.Windows.Forms.Button();
             this.LB_RegisterHere = new System.Windows.Forms.Label();
-            this.LB_ForgetPW = new System.Windows.Forms.Label();
             this.CHB_ShowPW = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_SignInImage)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_SignInImage
             // 
-            this.PB_SignInImage.Location = new System.Drawing.Point(85, 66);
+            this.PB_SignInImage.Image = global::SunnyCornerCafeApp.Properties.Resources._292_2924858_user_icon_business_man_flat_png_transparent_png;
+            this.PB_SignInImage.Location = new System.Drawing.Point(85, 56);
             this.PB_SignInImage.Name = "PB_SignInImage";
-            this.PB_SignInImage.Size = new System.Drawing.Size(112, 113);
+            this.PB_SignInImage.Size = new System.Drawing.Size(115, 123);
+            this.PB_SignInImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_SignInImage.TabIndex = 0;
             this.PB_SignInImage.TabStop = false;
             // 
@@ -76,7 +77,6 @@
             this.TB_UserName.Name = "TB_UserName";
             this.TB_UserName.Size = new System.Drawing.Size(251, 20);
             this.TB_UserName.TabIndex = 3;
-           
             // 
             // TB_Password
             // 
@@ -115,15 +115,6 @@
             this.LB_RegisterHere.Text = "No Account Yet? Register Here";
             this.LB_RegisterHere.Click += new System.EventHandler(this.LB_RegisterHere_Click);
             // 
-            // LB_ForgetPW
-            // 
-            this.LB_ForgetPW.AutoSize = true;
-            this.LB_ForgetPW.Location = new System.Drawing.Point(191, 328);
-            this.LB_ForgetPW.Name = "LB_ForgetPW";
-            this.LB_ForgetPW.Size = new System.Drawing.Size(87, 13);
-            this.LB_ForgetPW.TabIndex = 8;
-            this.LB_ForgetPW.Text = "Forget Pasword?";
-            // 
             // CHB_ShowPW
             // 
             this.CHB_ShowPW.AutoSize = true;
@@ -142,7 +133,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 516);
             this.Controls.Add(this.CHB_ShowPW);
-            this.Controls.Add(this.LB_ForgetPW);
             this.Controls.Add(this.LB_RegisterHere);
             this.Controls.Add(this.BTN_Login);
             this.Controls.Add(this.TB_Password);
@@ -171,7 +161,6 @@
         private System.Windows.Forms.Label LB_Password;
         private System.Windows.Forms.Button BTN_Login;
         private System.Windows.Forms.Label LB_RegisterHere;
-        private System.Windows.Forms.Label LB_ForgetPW;
         private System.Windows.Forms.CheckBox CHB_ShowPW;
     }
 }

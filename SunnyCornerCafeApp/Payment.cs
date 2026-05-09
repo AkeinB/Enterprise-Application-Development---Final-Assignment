@@ -14,6 +14,12 @@ namespace SunnyCornerCafeApp
     
     public partial class Payment
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Payment()
+        {
+            this.Orders = new HashSet<Order>();
+        }
+    
         public int id { get; set; }
         public string Name { get; set; }
         public string CardNo { get; set; }
@@ -21,5 +27,8 @@ namespace SunnyCornerCafeApp
         public Nullable<int> CvvNo { get; set; }
         public string Address { get; set; }
         public string PaymentMode { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }
