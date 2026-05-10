@@ -295,6 +295,10 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="Resources\292-2924858_user-icon-business-man-flat-png-transparent-png.png" />
+    <None Include="Resources\Hot-Drinks-Main.jpg" />
+    <None Include="Resources\Cold-Drink-Main.jpg" />
+    <None Include="Resources\Deli-Main.jpg" />
+    <None Include="Resources\Pastries-Main.jpg" />
     <Content Include="SunnyCornerCafeWebsite_DB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SunnyCornerCafeWebsite_DB.edmx</DependentUpon>

@@ -46,7 +46,9 @@
             this.BT_Pastries = new System.Windows.Forms.Button();
             this.BT_Deli = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.PB_Logo = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -206,12 +208,21 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "WELCOME     TO";
             // 
+            // PB_Logo
+            // 
+            this.PB_Logo.Location = new System.Drawing.Point(16, 57);
+            this.PB_Logo.Name = "PB_Logo";
+            this.PB_Logo.Size = new System.Drawing.Size(423, 215);
+            this.PB_Logo.TabIndex = 11;
+            this.PB_Logo.TabStop = false;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(767, 450);
+            this.Controls.Add(this.PB_Logo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BT_Deli);
             this.Controls.Add(this.BT_Pastries);
@@ -228,6 +239,7 @@
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +265,6 @@
         private System.Windows.Forms.Button BT_Deli;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.PictureBox PB_Logo;
     }
 }

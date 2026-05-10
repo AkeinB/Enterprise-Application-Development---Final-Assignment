@@ -144,7 +144,7 @@
             this.KeyPreview = true;
             this.Name = "LogInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.PB_SignInImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
