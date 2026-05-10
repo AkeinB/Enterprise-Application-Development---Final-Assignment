@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace SunnyCornerCafeApp
 {
@@ -26,41 +28,61 @@ namespace SunnyCornerCafeApp
         {
             try
             {
+                DialogResult result = MessageBox.Show("Are you sure save these changes?",
+                "Confirm Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result != DialogResult.Yes)
+                {
+                    return;
+                }
+
                 var userInfo = sunnyDB.Users.FirstOrDefault(u => u.id == _id);
+
                 if (userInfo != null)
                 {
-                    var oldPw = Utils.HashPassword(TB_OldPassword.Text);
-                    var newPw = Utils.HashPassword(TB_NewPassword.Text);
-                    var confirmPw = Utils.HashPassword(TB_ConfirmNewPassword.Text);
+                    var oldPw = TB_OldPassword.Text;
+                    var newPw = TB_NewPassword.Text;
+                    var confirmPw = TB_ConfirmNewPassword.Text;
 
+                    if (string.IsNullOrEmpty(oldPw) || string.IsNullOrEmpty(newPw) || string.IsNullOrEmpty(confirmPw))
+                    {
+                        MessageBox.Show("Please fill in all fields.");
+                        return;
+                    }
 
-                    var pwCheck = sunnyDB.Users.FirstOrDefault(u => u.Password == oldPw);
-                    if(pwCheck == null)
+                    var oldPwHashed = Utils.HashPassword(oldPw);
+
+                    // Check old password against this user
+                    if (userInfo.Password != oldPwHashed)
                     {
                         MessageBox.Show("Invalid Password");
                         return;
                     }
 
-                    var check = pwCheck.ToString();
-                    if (newPw == check)
+                    var newPwHashed = Utils.HashPassword(newPw);
+
+                    // Prevent reusing the same password
+                    if (newPwHashed == userInfo.Password)
                     {
-                        MessageBox.Show("New password connect be the same as old");
+                        MessageBox.Show("New password cannot be the same as old");
                         return;
                     }
 
+                    // Confirm new password
                     if (newPw != confirmPw)
                     {
                         MessageBox.Show("Passwords do not match. Please try again.");
                         return;
-
                     }
 
-                    userInfo.Password = newPw;
-
+                    // Update password
+                    userInfo.Password = newPwHashed;
                     sunnyDB.SaveChanges();
+
                     MessageBox.Show("Password Updated");
                     Close();
                 }
+                
             }
             catch (Exception)
             {

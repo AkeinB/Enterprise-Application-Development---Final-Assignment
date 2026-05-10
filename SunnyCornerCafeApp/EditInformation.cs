@@ -34,6 +34,14 @@ namespace SunnyCornerCafeApp
         {
             try
             {
+                DialogResult result = MessageBox.Show("Are you sure save these changes?",
+                "Confirm Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result != DialogResult.Yes)
+                {
+                    return;
+                }
+
                 var userInfo = sunnyDB.Users.FirstOrDefault(u => u.id == _id);
 
                 if (userInfo != null)

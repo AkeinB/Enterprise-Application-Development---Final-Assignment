@@ -1,5 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\GBlack\source\repos\Enterprise-Application-Development---Final-Assignment\SunnyCornerCafeApp\SunnyCornerCafeDB.edmx'. 
-// T4 code generation is enabled for model 'C:\Users\kemo5\OneDrive - Vocational Training Development Institute\Desktop\VTDI\Year 2\Semester 2\EAD\Assignmnet\code\SunnyCornerCafeApp\SunnyCornerCafeApp\SunnyCornerCafeWebsite_DB.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\kemo5\OneDrive - Vocational Training Development Institute\Desktop\VTDI\Year 2\Semester 2\EAD\Assignmnet\code\SunnyCornerCafeApp\SunnyCornerCafeApp\SunnyCornerCafeWebsite_DB.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

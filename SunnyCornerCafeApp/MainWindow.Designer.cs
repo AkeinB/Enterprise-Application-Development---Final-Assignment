@@ -121,6 +121,7 @@
             this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
             this.cartToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.cartToolStripMenuItem.Text = "Cart";
+            this.cartToolStripMenuItem.Visible = false;
             // 
             // managerUsersToolStripMenuItem
             // 
