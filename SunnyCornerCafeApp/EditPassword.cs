@@ -28,7 +28,7 @@ namespace SunnyCornerCafeApp
         {
             try
             {
-                DialogResult result = MessageBox.Show("Are you sure save these changes?",
+                DialogResult result = MessageBox.Show("Are you sure you want to save these changes?",
                 "Confirm Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result != DialogResult.Yes)

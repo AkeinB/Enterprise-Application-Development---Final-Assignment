@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BT_BookTable = new System.Windows.Forms.Button();
+            this.BTN_Cancel = new System.Windows.Forms.Button();
             this.PB_HDrinks = new System.Windows.Forms.PictureBox();
             this.PB_CDrinks = new System.Windows.Forms.PictureBox();
-            this.PB_Pastries = new System.Windows.Forms.PictureBox();
             this.PB_Deli = new System.Windows.Forms.PictureBox();
+            this.PB_Pastries = new System.Windows.Forms.PictureBox();
             this.LB_Deli = new System.Windows.Forms.Label();
             this.LB_Pastries = new System.Windows.Forms.Label();
             this.LB_HDrinks = new System.Windows.Forms.Label();
@@ -47,23 +47,23 @@
             this.CB_Milkshake = new System.Windows.Forms.CheckBox();
             this.CB_IceCoffe = new System.Windows.Forms.CheckBox();
             this.CB_Tea = new System.Windows.Forms.CheckBox();
-            this.CB_Muffin = new System.Windows.Forms.CheckBox();
-            this.CB_Cookie = new System.Windows.Forms.CheckBox();
             this.CB_Cake = new System.Windows.Forms.CheckBox();
+            this.CB_Cookie = new System.Windows.Forms.CheckBox();
+            this.CB_Muffin = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_HDrinks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_CDrinks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Pastries)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Deli)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Pastries)).BeginInit();
             this.SuspendLayout();
             // 
-            // BT_BookTable
+            // BTN_Cancel
             // 
-            this.BT_BookTable.Location = new System.Drawing.Point(634, 890);
-            this.BT_BookTable.Name = "BT_BookTable";
-            this.BT_BookTable.Size = new System.Drawing.Size(137, 39);
-            this.BT_BookTable.TabIndex = 0;
-            this.BT_BookTable.Text = "Book a Table";
-            this.BT_BookTable.UseVisualStyleBackColor = true;
+            this.BTN_Cancel.Location = new System.Drawing.Point(634, 878);
+            this.BTN_Cancel.Name = "BTN_Cancel";
+            this.BTN_Cancel.Size = new System.Drawing.Size(137, 39);
+            this.BTN_Cancel.TabIndex = 0;
+            this.BTN_Cancel.Text = "Cancel";
+            this.BTN_Cancel.UseVisualStyleBackColor = true;
             // 
             // PB_HDrinks
             // 
@@ -81,14 +81,6 @@
             this.PB_CDrinks.TabIndex = 3;
             this.PB_CDrinks.TabStop = false;
             // 
-            // PB_Pastries
-            // 
-            this.PB_Pastries.Location = new System.Drawing.Point(445, 466);
-            this.PB_Pastries.Name = "PB_Pastries";
-            this.PB_Pastries.Size = new System.Drawing.Size(197, 266);
-            this.PB_Pastries.TabIndex = 13;
-            this.PB_Pastries.TabStop = false;
-            // 
             // PB_Deli
             // 
             this.PB_Deli.Location = new System.Drawing.Point(107, 466);
@@ -96,6 +88,14 @@
             this.PB_Deli.Size = new System.Drawing.Size(197, 266);
             this.PB_Deli.TabIndex = 12;
             this.PB_Deli.TabStop = false;
+            // 
+            // PB_Pastries
+            // 
+            this.PB_Pastries.Location = new System.Drawing.Point(445, 466);
+            this.PB_Pastries.Name = "PB_Pastries";
+            this.PB_Pastries.Size = new System.Drawing.Size(197, 266);
+            this.PB_Pastries.TabIndex = 13;
+            this.PB_Pastries.TabStop = false;
             // 
             // LB_Deli
             // 
@@ -139,7 +139,7 @@
             // 
             // BT_AddtoCart
             // 
-            this.BT_AddtoCart.Location = new System.Drawing.Point(445, 890);
+            this.BT_AddtoCart.Location = new System.Drawing.Point(445, 878);
             this.BT_AddtoCart.Name = "BT_AddtoCart";
             this.BT_AddtoCart.Size = new System.Drawing.Size(137, 39);
             this.BT_AddtoCart.TabIndex = 26;
@@ -237,15 +237,15 @@
             this.CB_Tea.Text = "Tea";
             this.CB_Tea.UseVisualStyleBackColor = true;
             // 
-            // CB_Muffin
+            // CB_Cake
             // 
-            this.CB_Muffin.AutoSize = true;
-            this.CB_Muffin.Location = new System.Drawing.Point(527, 769);
-            this.CB_Muffin.Name = "CB_Muffin";
-            this.CB_Muffin.Size = new System.Drawing.Size(55, 17);
-            this.CB_Muffin.TabIndex = 38;
-            this.CB_Muffin.Text = "Muffin";
-            this.CB_Muffin.UseVisualStyleBackColor = true;
+            this.CB_Cake.AutoSize = true;
+            this.CB_Cake.Location = new System.Drawing.Point(527, 738);
+            this.CB_Cake.Name = "CB_Cake";
+            this.CB_Cake.Size = new System.Drawing.Size(51, 17);
+            this.CB_Cake.TabIndex = 36;
+            this.CB_Cake.Text = "Cake";
+            this.CB_Cake.UseVisualStyleBackColor = true;
             // 
             // CB_Cookie
             // 
@@ -257,22 +257,22 @@
             this.CB_Cookie.Text = "Cookie";
             this.CB_Cookie.UseVisualStyleBackColor = true;
             // 
-            // CB_Cake
+            // CB_Muffin
             // 
-            this.CB_Cake.AutoSize = true;
-            this.CB_Cake.Location = new System.Drawing.Point(527, 738);
-            this.CB_Cake.Name = "CB_Cake";
-            this.CB_Cake.Size = new System.Drawing.Size(51, 17);
-            this.CB_Cake.TabIndex = 36;
-            this.CB_Cake.Text = "Cake";
-            this.CB_Cake.UseVisualStyleBackColor = true;
+            this.CB_Muffin.AutoSize = true;
+            this.CB_Muffin.Location = new System.Drawing.Point(527, 769);
+            this.CB_Muffin.Name = "CB_Muffin";
+            this.CB_Muffin.Size = new System.Drawing.Size(55, 17);
+            this.CB_Muffin.TabIndex = 38;
+            this.CB_Muffin.Text = "Muffin";
+            this.CB_Muffin.UseVisualStyleBackColor = true;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(800, 1029);
+            this.ClientSize = new System.Drawing.Size(800, 432);
             this.Controls.Add(this.CB_Muffin);
             this.Controls.Add(this.CB_Cookie);
             this.Controls.Add(this.CB_Cake);
@@ -294,13 +294,13 @@
             this.Controls.Add(this.PB_Deli);
             this.Controls.Add(this.PB_CDrinks);
             this.Controls.Add(this.PB_HDrinks);
-            this.Controls.Add(this.BT_BookTable);
+            this.Controls.Add(this.BTN_Cancel);
             this.Name = "Menu";
             this.Text = "Menu";
             ((System.ComponentModel.ISupportInitialize)(this.PB_HDrinks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_CDrinks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Pastries)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Deli)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Pastries)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,11 +308,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BT_BookTable;
+        private System.Windows.Forms.Button BTN_Cancel;
         private System.Windows.Forms.PictureBox PB_HDrinks;
         private System.Windows.Forms.PictureBox PB_CDrinks;
-        private System.Windows.Forms.PictureBox PB_Pastries;
         private System.Windows.Forms.PictureBox PB_Deli;
+        private System.Windows.Forms.PictureBox PB_Pastries;
         private System.Windows.Forms.Label LB_Deli;
         private System.Windows.Forms.Label LB_Pastries;
         private System.Windows.Forms.Label LB_HDrinks;
@@ -327,8 +327,8 @@
         private System.Windows.Forms.CheckBox CB_Milkshake;
         private System.Windows.Forms.CheckBox CB_IceCoffe;
         private System.Windows.Forms.CheckBox CB_Tea;
-        private System.Windows.Forms.CheckBox CB_Muffin;
-        private System.Windows.Forms.CheckBox CB_Cookie;
         private System.Windows.Forms.CheckBox CB_Cake;
+        private System.Windows.Forms.CheckBox CB_Cookie;
+        private System.Windows.Forms.CheckBox CB_Muffin;
     }
 }
