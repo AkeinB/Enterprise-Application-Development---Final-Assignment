@@ -41,6 +41,12 @@ namespace SunnyCornerCafeApp
                         return;
                     }
 
+                    var check = pwCheck.ToString();
+                    if (newPw == check)
+                    {
+                        MessageBox.Show("New password connect be the same as old");
+                        return;
+                    }
 
                     if (newPw != confirmPw)
                     {

@@ -162,7 +162,7 @@
             // 
             // BT_Edit
             // 
-            this.BT_Edit.Location = new System.Drawing.Point(177, 356);
+            this.BT_Edit.Location = new System.Drawing.Point(190, 356);
             this.BT_Edit.Name = "BT_Edit";
             this.BT_Edit.Size = new System.Drawing.Size(115, 33);
             this.BT_Edit.TabIndex = 15;

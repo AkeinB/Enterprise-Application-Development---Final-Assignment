@@ -108,6 +108,7 @@
             this.bookTableToolStripMenuItem.Name = "bookTableToolStripMenuItem";
             this.bookTableToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.bookTableToolStripMenuItem.Text = "Book Table";
+            this.bookTableToolStripMenuItem.Visible = false;
             // 
             // ordersToolStripMenuItem2
             // 
