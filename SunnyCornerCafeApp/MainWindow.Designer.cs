@@ -31,7 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.userProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EditProfilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +68,7 @@
             // 
             this.userProfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.accountToolStripMenuItem,
-            this.ordersToolStripMenuItem,
+            this.EditProfilesToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.userProfileToolStripMenuItem.Name = "userProfileToolStripMenuItem";
             this.userProfileToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
@@ -81,18 +81,19 @@
             this.accountToolStripMenuItem.Text = "Account Information";
             this.accountToolStripMenuItem.Click += new System.EventHandler(this.accountToolStripMenuItem_Click);
             // 
-            // ordersToolStripMenuItem
+            // EditProfilesToolStripMenuItem
             // 
-            this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
-            this.ordersToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
-            this.ordersToolStripMenuItem.Text = "Edit Profile";
-            this.ordersToolStripMenuItem.Click += new System.EventHandler(this.ordersToolStripMenuItem_Click);
+            this.EditProfilesToolStripMenuItem.Name = "EditProfilesToolStripMenuItem";
+            this.EditProfilesToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.EditProfilesToolStripMenuItem.Text = "Edit Profile";
+            this.EditProfilesToolStripMenuItem.Visible = false;
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.logoutToolStripMenuItem.Text = "Log out";
+            this.logoutToolStripMenuItem.Visible = false;
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // menuToolStripMenuItem
@@ -196,10 +197,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("a Auto Signature", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(219, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 16);
+            this.label1.Size = new System.Drawing.Size(132, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "WELCOME     TO";
             // 
@@ -235,7 +236,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem userProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EditProfilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem managerUsersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bookTableToolStripMenuItem;

@@ -116,14 +116,8 @@ namespace SunnyCornerCafeApp
 
         private void accountToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var profile  = new UserInformation();
+            var profile  = new UserInformation(_user);
             profile.Show();
-        }
-
-        private void ordersToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var editprofile = new EditInformation();
-            editprofile.Show();
         }
     }
 }

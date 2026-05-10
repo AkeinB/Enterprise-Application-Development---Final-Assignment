@@ -46,6 +46,23 @@ namespace SunnyCornerCafeApp
 
         public void PopulateGrid()
         {
+            var users = sunnyDB.Users.Select(r => new
+            {
+                r.id,
+                r.Username,
+                r.UserRoles.FirstOrDefault().Role.Name,
+                r.IsActive
+            }).ToList();
+
+
+
+            GV_OrderList.DataSource = users;
+            GV_OrderList.Columns["UserName"].HeaderText = "User Name";
+            GV_OrderList.Columns["name"].HeaderText = "User Role";
+            GV_OrderList.Columns["isActive"].HeaderText = "User Status";
+            //HideS the column for ID. Changed from the hard coded column value to the name, 
+            // to make it more dynamic. 
+            GV_OrderList.Columns["id"].Visible = false;
             //var Orders = sunnyDB.Orders.Select(o => new
             //{
             //    o.id,

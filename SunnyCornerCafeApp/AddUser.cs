@@ -26,7 +26,7 @@ namespace SunnyCornerCafeApp
         {
             try
             {
-                var userName = TB_UserName.Text;
+                var userName = TB_UserName.Text.Trim();
                 var Role = (int)CB_UserType.SelectedValue;
                 var password = Utils.DefaultHashPassword();
 

@@ -100,40 +100,40 @@
             // LB_Deli
             // 
             this.LB_Deli.AutoSize = true;
-            this.LB_Deli.Font = new System.Drawing.Font("a Alam Raya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Deli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Deli.Location = new System.Drawing.Point(190, 450);
             this.LB_Deli.Name = "LB_Deli";
-            this.LB_Deli.Size = new System.Drawing.Size(33, 16);
+            this.LB_Deli.Size = new System.Drawing.Size(46, 20);
             this.LB_Deli.TabIndex = 22;
             this.LB_Deli.Text = "DELI";
             // 
             // LB_Pastries
             // 
             this.LB_Pastries.AutoSize = true;
-            this.LB_Pastries.Font = new System.Drawing.Font("a Alam Raya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Pastries.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Pastries.Location = new System.Drawing.Point(524, 450);
             this.LB_Pastries.Name = "LB_Pastries";
-            this.LB_Pastries.Size = new System.Drawing.Size(62, 16);
+            this.LB_Pastries.Size = new System.Drawing.Size(89, 20);
             this.LB_Pastries.TabIndex = 23;
             this.LB_Pastries.Text = "PASTRIES";
             // 
             // LB_HDrinks
             // 
             this.LB_HDrinks.AutoSize = true;
-            this.LB_HDrinks.Font = new System.Drawing.Font("a Alam Raya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_HDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_HDrinks.Location = new System.Drawing.Point(170, 19);
             this.LB_HDrinks.Name = "LB_HDrinks";
-            this.LB_HDrinks.Size = new System.Drawing.Size(80, 16);
+            this.LB_HDrinks.Size = new System.Drawing.Size(107, 20);
             this.LB_HDrinks.TabIndex = 24;
             this.LB_HDrinks.Text = "HOT DRINKS";
             // 
             // LB_CDrinks
             // 
             this.LB_CDrinks.AutoSize = true;
-            this.LB_CDrinks.Font = new System.Drawing.Font("a Alam Raya", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_CDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_CDrinks.Location = new System.Drawing.Point(500, 16);
             this.LB_CDrinks.Name = "LB_CDrinks";
-            this.LB_CDrinks.Size = new System.Drawing.Size(86, 16);
+            this.LB_CDrinks.Size = new System.Drawing.Size(118, 20);
             this.LB_CDrinks.TabIndex = 25;
             this.LB_CDrinks.Text = "COLD DRINKS";
             // 
@@ -272,7 +272,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(800, 498);
+            this.ClientSize = new System.Drawing.Size(800, 1029);
             this.Controls.Add(this.CB_Muffin);
             this.Controls.Add(this.CB_Cookie);
             this.Controls.Add(this.CB_Cake);

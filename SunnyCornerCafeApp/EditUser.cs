@@ -31,7 +31,7 @@ namespace SunnyCornerCafeApp
                 var user = sunnyDB.Users.FirstOrDefault(u => u.id == _userID);
                 if (user != null)
                 {
-                    user.Username = TB_UserName.Text;
+                    user.Username = TB_UserName.Text.Trim();
                     user.IsActive = (bool)CB_UserStatus.SelectedValue;
                     user.UserRoles.FirstOrDefault().RoleId = (int)CB_UserType.SelectedValue;
 

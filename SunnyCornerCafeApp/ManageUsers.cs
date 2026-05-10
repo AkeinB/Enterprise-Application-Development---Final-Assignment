@@ -70,7 +70,7 @@ namespace SunnyCornerCafeApp
             //var Userid = sunnyDB.Users.FirstOrDefault( c => c.id == id);
 
             //Launch EditUser window with data
-            var EditUser = new EditUser(this, id);
+            var EditUser = new EditUser(null, id);
             EditUser.ShowDialog();
 
         }
