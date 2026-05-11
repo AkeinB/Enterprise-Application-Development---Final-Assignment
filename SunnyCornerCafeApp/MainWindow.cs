@@ -111,7 +111,7 @@ namespace SunnyCornerCafeApp
         private void BT_BookTable_Click(object sender, EventArgs e)
         {
             var booktable = new BookTable();
-            booktableShowDialog();
+            booktable.ShowDialog();
         }
 
         private void BT_Cart_Click(object sender, EventArgs e)
