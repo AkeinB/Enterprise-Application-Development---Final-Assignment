@@ -58,7 +58,7 @@
             // 
             // BT_BookTable
             // 
-            this.BT_BookTable.Location = new System.Drawing.Point(634, 890);
+            this.BT_BookTable.Location = new System.Drawing.Point(588, 878);
             this.BT_BookTable.Name = "BT_BookTable";
             this.BT_BookTable.Size = new System.Drawing.Size(137, 39);
             this.BT_BookTable.TabIndex = 0;
@@ -107,7 +107,7 @@
             // 
             // BT_AddtoCart
             // 
-            this.BT_AddtoCart.Location = new System.Drawing.Point(445, 890);
+            this.BT_AddtoCart.Location = new System.Drawing.Point(404, 878);
             this.BT_AddtoCart.Name = "BT_AddtoCart";
             this.BT_AddtoCart.Size = new System.Drawing.Size(137, 39);
             this.BT_AddtoCart.TabIndex = 26;
@@ -259,9 +259,9 @@
             // 
             this.PB_CDrinks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PB_CDrinks.Image = global::SunnyCornerCafeApp.Properties.Resources.Cold_Drink_Main;
-            this.PB_CDrinks.Location = new System.Drawing.Point(440, 129);
+            this.PB_CDrinks.Location = new System.Drawing.Point(441, 102);
             this.PB_CDrinks.Name = "PB_CDrinks";
-            this.PB_CDrinks.Size = new System.Drawing.Size(197, 115);
+            this.PB_CDrinks.Size = new System.Drawing.Size(259, 156);
             this.PB_CDrinks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_CDrinks.TabIndex = 3;
             this.PB_CDrinks.TabStop = false;
@@ -269,9 +269,9 @@
             // PB_HDrinks
             // 
             this.PB_HDrinks.Image = global::SunnyCornerCafeApp.Properties.Resources.Hot_Drinks_Main;
-            this.PB_HDrinks.Location = new System.Drawing.Point(109, 116);
+            this.PB_HDrinks.Location = new System.Drawing.Point(109, 102);
             this.PB_HDrinks.Name = "PB_HDrinks";
-            this.PB_HDrinks.Size = new System.Drawing.Size(197, 142);
+            this.PB_HDrinks.Size = new System.Drawing.Size(211, 156);
             this.PB_HDrinks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_HDrinks.TabIndex = 2;
             this.PB_HDrinks.TabStop = false;
@@ -281,6 +281,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(749, 471);
             this.Controls.Add(this.CB_Muffin);
             this.Controls.Add(this.CB_Cookie);
