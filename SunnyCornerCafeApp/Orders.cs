@@ -13,10 +13,12 @@ namespace SunnyCornerCafeApp
     public partial class Orders : Form
     {
         private readonly SunnyCornerCafeWebsite_DBEntities sunnyDB;
-        public Orders()
+        private readonly User _userInfo;
+        public Orders(User user)
         {
             InitializeComponent();
             sunnyDB = new SunnyCornerCafeWebsite_DBEntities();
+            _userInfo = user;
         }
 
         
@@ -36,46 +38,70 @@ namespace SunnyCornerCafeApp
 
         private void BTN_NewOrder_Click(object sender, EventArgs e)
         {
-
+            var menu = new Menu(_userInfo);
+            menu.ShowDialog();
+            Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DialogResult result = MessageBox.Show("Are you sure you want to Cancel this order?",
+                "Confirm Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result != DialogResult.Yes)
+                {
+                    return;
+                }
+
+
+
+
+                    int orderId = (int)GV_OrderList.CurrentRow.Cells["id"].Value;
+
+                var order = sunnyDB.Orders.FirstOrDefault(o => o.id == orderId);
+                if (order != null)
+                {
+                    order.Status = "Cancelled";
+                    sunnyDB.SaveChanges();
+                    PopulateGrid();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
+
 
         }
 
         public void PopulateGrid()
         {
-            var users = sunnyDB.Users.Select(r => new
-            {
-                r.id,
-                r.Username,
-                r.UserRoles.FirstOrDefault().Role.Name,
-                r.IsActive
-            }).ToList();
+            var orders = sunnyDB.Orders
+                .Select(o => new
+                {
+                    o.id,
+                    o.OrderNo,
+                    UserName = o.User.Username,   // navigate relationship
+                    o.OrderDate,
+                    o.Status
+                })
+                .ToList();
 
+            GV_OrderList.DataSource = orders;
 
-
-            GV_OrderList.DataSource = users;
             GV_OrderList.Columns["UserName"].HeaderText = "User Name";
-            GV_OrderList.Columns["name"].HeaderText = "User Role";
-            GV_OrderList.Columns["isActive"].HeaderText = "User Status";
-            //HideS the column for ID. Changed from the hard coded column value to the name, 
-            // to make it more dynamic. 
+            GV_OrderList.Columns["OrderDate"].HeaderText = "Order Date";
+            GV_OrderList.Columns["Status"].HeaderText = "Order Status";
+
             GV_OrderList.Columns["id"].Visible = false;
-            //var Orders = sunnyDB.Orders.Select(o => new
-            //{
-            //    o.id,
-            //    o.OrderNo,
-            //    UserName = o.UserId.FirstOrDefault().UserName,
-            //    o.Status
-            //}).ToList();
 
-            //GV_OrderList.DataSource = Orders;
-
-            //GV_OrderList.Columns["UserName"].HeaderText = "User Name";
-            //GV_OrderList.Columns["Status"].HeaderText = "Order Status";
-            //GV_OrderList.Columns["id"].Visible = false;
+            // Format the date column nicely
+            GV_OrderList.Columns["OrderDate"].DefaultCellStyle.Format = "yyyy-MM-dd";
         }
+
+        
     }
 }

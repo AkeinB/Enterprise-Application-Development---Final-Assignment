@@ -299,6 +299,14 @@
     <None Include="Resources\Cold-Drink-Main.jpg" />
     <None Include="Resources\Deli-Main.jpg" />
     <None Include="Resources\Pastries-Main.jpg" />
+    <None Include="Resources\AdobeStock_2641401491.jpeg" />
+    <None Include="Resources\Sunny corner cafe logo1.png" />
+    <None Include="Resources\cafe-bar1.png" />
+    <None Include="Resources\Cocktails London-jpg.jpeg" />
+    <None Include="Resources\coffee.jpg" />
+    <None Include="Resources\dark-coffee.jpg" />
+    <None Include="Resources\latte1.jpg" />
+    <None Include="Resources\logo.png" />
     <Content Include="SunnyCornerCafeWebsite_DB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SunnyCornerCafeWebsite_DB.edmx</DependentUpon>

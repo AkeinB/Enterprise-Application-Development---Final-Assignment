@@ -12,6 +12,7 @@ namespace SunnyCornerCafeApp
 {
     public partial class MainWindow : Form
     {
+        private readonly SunnyCornerCafeWebsite_DBEntities sunnyDB;
         private readonly LogInForm _logInForm;
         private readonly SignUpForm _signUpForm;
         public string _roleName;
@@ -20,7 +21,7 @@ namespace SunnyCornerCafeApp
         {
             InitializeComponent();
             this.FormClosing += new FormClosingEventHandler(MainWindow_FormClosing); // Attach the FormClosing event handler
-
+            sunnyDB = new SunnyCornerCafeWebsite_DBEntities();
         }
 
         public MainWindow(LogInForm logInForm = null, User user = null , SignUpForm signUpForm = null )
@@ -31,6 +32,7 @@ namespace SunnyCornerCafeApp
             _signUpForm = signUpForm;
             _user = user;
             _roleName = user.UserRoles.FirstOrDefault().Role.ShortName;
+            sunnyDB = new SunnyCornerCafeWebsite_DBEntities();
         }
 
         private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
@@ -56,6 +58,10 @@ namespace SunnyCornerCafeApp
                     if (form != this) 
                         form.Close();
                 }
+
+                // dispose of your DbContext(s) here
+                if (sunnyDB != null)
+                    sunnyDB.Dispose();
             }
             
         }
@@ -92,32 +98,32 @@ namespace SunnyCornerCafeApp
 
         private void menuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var menu= new Menu();
-            menu.Show();
+            var menu= new Menu(_user);
+            menu.ShowDialog();
         }
 
         private void BT_Orders_Click(object sender, EventArgs e)
         {
-            var orders = new Orders();
-            orders.Show();
+            var orders = new Orders(_user);
+            orders.ShowDialog();
         }
 
         private void BT_BookTable_Click(object sender, EventArgs e)
         {
             var booktable = new BookTable();
-            booktable.Show();
+            booktable.ShowDialog();
         }
 
         private void BT_Cart_Click(object sender, EventArgs e)
         {
-            var cart = new UserCart();
-            cart.Show();
+            var cart = new UserCart(_user);
+            cart.ShowDialog();
         }
 
         private void accountToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var profile  = new UserInformation(_user);
-            profile.Show();
+            profile.ShowDialog();
         }
     }
 }
