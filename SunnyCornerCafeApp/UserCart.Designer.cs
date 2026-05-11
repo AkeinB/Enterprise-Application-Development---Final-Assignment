@@ -28,29 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.BT_Checkout = new System.Windows.Forms.Button();
             this.LB_YourCart = new System.Windows.Forms.Label();
             this.BT_AddMore = new System.Windows.Forms.Button();
             this.BT_Back = new System.Windows.Forms.Button();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            this.GV_Cart = new System.Windows.Forms.DataGridView();
+            this.orderDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.GV_Cart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // BT_Checkout
             // 
-            this.BT_Checkout.Font = new System.Drawing.Font("a Alam Raya", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BT_Checkout.Location = new System.Drawing.Point(328, 406);
+            this.BT_Checkout.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_Checkout.Location = new System.Drawing.Point(134, 394);
             this.BT_Checkout.Name = "BT_Checkout";
             this.BT_Checkout.Size = new System.Drawing.Size(142, 58);
             this.BT_Checkout.TabIndex = 0;
@@ -61,16 +53,16 @@
             // LB_YourCart
             // 
             this.LB_YourCart.AutoSize = true;
-            this.LB_YourCart.Font = new System.Drawing.Font("a Antara Distance", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_YourCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_YourCart.Location = new System.Drawing.Point(64, 33);
             this.LB_YourCart.Name = "LB_YourCart";
-            this.LB_YourCart.Size = new System.Drawing.Size(137, 44);
+            this.LB_YourCart.Size = new System.Drawing.Size(165, 39);
             this.LB_YourCart.TabIndex = 1;
             this.LB_YourCart.Text = "Your Cart";
             // 
             // BT_AddMore
             // 
-            this.BT_AddMore.Location = new System.Drawing.Point(247, 421);
+            this.BT_AddMore.Location = new System.Drawing.Point(53, 409);
             this.BT_AddMore.Name = "BT_AddMore";
             this.BT_AddMore.Size = new System.Drawing.Size(75, 23);
             this.BT_AddMore.TabIndex = 2;
@@ -90,102 +82,43 @@
             this.BT_Back.UseVisualStyleBackColor = false;
             this.BT_Back.Click += new System.EventHandler(this.BT_Back_Click);
             // 
-            // splitContainer1
+            // GV_Cart
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(52, 98);
-            this.splitContainer1.Name = "splitContainer1";
+            this.GV_Cart.AllowUserToResizeColumns = false;
+            this.GV_Cart.AllowUserToResizeRows = false;
+            this.GV_Cart.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.GV_Cart.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.GV_Cart.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GV_Cart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GV_Cart.GridColor = System.Drawing.SystemColors.Control;
+            this.GV_Cart.Location = new System.Drawing.Point(12, 100);
+            this.GV_Cart.MultiSelect = false;
+            this.GV_Cart.Name = "GV_Cart";
+            this.GV_Cart.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.GV_Cart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GV_Cart.Size = new System.Drawing.Size(291, 252);
+            this.GV_Cart.TabIndex = 4;
             // 
-            // splitContainer1.Panel1
+            // orderDetailsBindingSource
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.textBox4);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox3);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox2);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox1);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.textBox8);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox7);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox6);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox5);
-            this.splitContainer1.Size = new System.Drawing.Size(379, 275);
-            this.splitContainer1.SplitterDistance = 126;
-            this.splitContainer1.TabIndex = 4;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(16, 233);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(95, 20);
-            this.textBox4.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(16, 173);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(95, 20);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(16, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(95, 20);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(16, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(95, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(25, 233);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(206, 20);
-            this.textBox8.TabIndex = 3;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(25, 173);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(206, 20);
-            this.textBox7.TabIndex = 2;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(25, 103);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(206, 20);
-            this.textBox6.TabIndex = 1;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(25, 35);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(206, 20);
-            this.textBox5.TabIndex = 0;
+            this.orderDetailsBindingSource.DataMember = "OrderDetails";
             // 
             // UserCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 481);
-            this.Controls.Add(this.splitContainer1);
+            this.ClientSize = new System.Drawing.Size(354, 481);
+            this.Controls.Add(this.GV_Cart);
             this.Controls.Add(this.BT_Back);
             this.Controls.Add(this.BT_AddMore);
             this.Controls.Add(this.LB_YourCart);
             this.Controls.Add(this.BT_Checkout);
             this.Name = "UserCart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cart";
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.UserCart_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.GV_Cart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,14 +130,9 @@
         private System.Windows.Forms.Label LB_YourCart;
         private System.Windows.Forms.Button BT_AddMore;
         private System.Windows.Forms.Button BT_Back;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.DataGridView GV_Cart;
+        
+        private System.Windows.Forms.BindingSource orderDetailsBindingSource;
+       
     }
 }

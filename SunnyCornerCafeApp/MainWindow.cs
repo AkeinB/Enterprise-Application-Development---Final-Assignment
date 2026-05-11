@@ -99,31 +99,31 @@ namespace SunnyCornerCafeApp
         private void menuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var menu= new Menu(_user);
-            menu.Show();
+            menu.ShowDialog();
         }
 
         private void BT_Orders_Click(object sender, EventArgs e)
         {
-            var orders = new Orders();
-            orders.Show();
+            var orders = new Orders(_user);
+            orders.ShowDialog();
         }
 
         private void BT_BookTable_Click(object sender, EventArgs e)
         {
             var booktable = new BookTable();
-            booktable.Show();
+            booktableShowDialog();
         }
 
         private void BT_Cart_Click(object sender, EventArgs e)
         {
             var cart = new UserCart(_user);
-            cart.Show();
+            cart.ShowDialog();
         }
 
         private void accountToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var profile  = new UserInformation(_user);
-            profile.Show();
+            profile.ShowDialog();
         }
     }
 }

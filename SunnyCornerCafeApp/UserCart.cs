@@ -63,6 +63,7 @@ namespace SunnyCornerCafeApp
 
                 sunnyDB.Carts.RemoveRange(cartItems); // clear cart
                 sunnyDB.SaveChanges();
+
             }
             catch (Exception)
             {
@@ -71,7 +72,17 @@ namespace SunnyCornerCafeApp
             }
 
             var payment = new UserPayment();
-            payment.Show();
+            payment.ShowDialog();
+        }
+
+        private void UserCart_Load(object sender, EventArgs e)
+        {
+            var cartItems = sunnyDB.Carts
+                          .Where(c => c.UserId == _userInfo.id)
+                          .Select(c => new { Item = c.Product.Name, c.Quantity })
+                          .ToList();
+
+            GV_Cart.DataSource = cartItems; // shows cart contents
         }
     }
 }

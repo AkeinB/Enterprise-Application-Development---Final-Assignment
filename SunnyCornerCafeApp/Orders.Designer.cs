@@ -40,7 +40,7 @@
             // LB_Orders
             // 
             this.LB_Orders.AutoSize = true;
-            this.LB_Orders.Location = new System.Drawing.Point(299, 9);
+            this.LB_Orders.Location = new System.Drawing.Point(201, 25);
             this.LB_Orders.Name = "LB_Orders";
             this.LB_Orders.Size = new System.Drawing.Size(38, 13);
             this.LB_Orders.TabIndex = 0;
@@ -48,12 +48,17 @@
             // 
             // GV_OrderList
             // 
+            this.GV_OrderList.AllowUserToAddRows = false;
+            this.GV_OrderList.AllowUserToDeleteRows = false;
+            this.GV_OrderList.AllowUserToResizeColumns = false;
+            this.GV_OrderList.AllowUserToResizeRows = false;
             this.GV_OrderList.BackgroundColor = System.Drawing.SystemColors.Control;
             this.GV_OrderList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GV_OrderList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GV_OrderList.Location = new System.Drawing.Point(15, 41);
             this.GV_OrderList.Name = "GV_OrderList";
-            this.GV_OrderList.Size = new System.Drawing.Size(638, 306);
+            this.GV_OrderList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GV_OrderList.Size = new System.Drawing.Size(426, 306);
             this.GV_OrderList.TabIndex = 1;
             // 
             // groupBox1
@@ -61,7 +66,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.BTN_NewOrder);
-            this.groupBox1.Location = new System.Drawing.Point(168, 353);
+            this.groupBox1.Location = new System.Drawing.Point(71, 353);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(296, 68);
             this.groupBox1.TabIndex = 4;
@@ -91,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 450);
+            this.ClientSize = new System.Drawing.Size(480, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GV_OrderList);
             this.Controls.Add(this.LB_Orders);
