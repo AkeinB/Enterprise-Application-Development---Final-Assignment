@@ -40,9 +40,11 @@
             // LB_Orders
             // 
             this.LB_Orders.AutoSize = true;
-            this.LB_Orders.Location = new System.Drawing.Point(201, 25);
+            this.LB_Orders.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Orders.Location = new System.Drawing.Point(200, 15);
+            this.LB_Orders.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Orders.Name = "LB_Orders";
-            this.LB_Orders.Size = new System.Drawing.Size(38, 13);
+            this.LB_Orders.Size = new System.Drawing.Size(124, 42);
             this.LB_Orders.TabIndex = 0;
             this.LB_Orders.Text = "Orders";
             // 
@@ -52,13 +54,14 @@
             this.GV_OrderList.AllowUserToDeleteRows = false;
             this.GV_OrderList.AllowUserToResizeColumns = false;
             this.GV_OrderList.AllowUserToResizeRows = false;
-            this.GV_OrderList.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.GV_OrderList.BackgroundColor = System.Drawing.Color.PaleGoldenrod;
             this.GV_OrderList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GV_OrderList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GV_OrderList.Location = new System.Drawing.Point(15, 41);
+            this.GV_OrderList.Location = new System.Drawing.Point(31, 60);
+            this.GV_OrderList.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.GV_OrderList.Name = "GV_OrderList";
             this.GV_OrderList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GV_OrderList.Size = new System.Drawing.Size(426, 306);
+            this.GV_OrderList.Size = new System.Drawing.Size(497, 330);
             this.GV_OrderList.TabIndex = 1;
             // 
             // groupBox1
@@ -66,17 +69,21 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.BTN_NewOrder);
-            this.groupBox1.Location = new System.Drawing.Point(71, 353);
+            this.groupBox1.Location = new System.Drawing.Point(101, 396);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(296, 68);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.groupBox1.Size = new System.Drawing.Size(345, 73);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(160, 15);
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(187, 16);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 38);
+            this.button2.Size = new System.Drawing.Size(105, 41);
             this.button2.TabIndex = 5;
             this.button2.Text = "Cancel Order";
             this.button2.UseVisualStyleBackColor = true;
@@ -84,9 +91,11 @@
             // 
             // BTN_NewOrder
             // 
-            this.BTN_NewOrder.Location = new System.Drawing.Point(46, 15);
+            this.BTN_NewOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_NewOrder.Location = new System.Drawing.Point(58, 16);
+            this.BTN_NewOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BTN_NewOrder.Name = "BTN_NewOrder";
-            this.BTN_NewOrder.Size = new System.Drawing.Size(90, 38);
+            this.BTN_NewOrder.Size = new System.Drawing.Size(105, 41);
             this.BTN_NewOrder.TabIndex = 4;
             this.BTN_NewOrder.Text = "New Order";
             this.BTN_NewOrder.UseVisualStyleBackColor = true;
@@ -94,12 +103,15 @@
             // 
             // Orders
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 450);
+            this.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.ClientSize = new System.Drawing.Size(560, 485);
+            this.Controls.Add(this.LB_Orders);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GV_OrderList);
-            this.Controls.Add(this.LB_Orders);
+            this.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Orders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Orders";

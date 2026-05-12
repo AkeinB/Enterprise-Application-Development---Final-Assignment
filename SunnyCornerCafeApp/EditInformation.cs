@@ -15,7 +15,7 @@ namespace SunnyCornerCafeApp
         private readonly SunnyCornerCafeWebsite_DBEntities sunnyDB;
         private readonly UserInformation _userInfo;
         private readonly int _id;
-        public EditInformation(UserInformation userInfo, int userId)
+        public EditInformation(int userId, UserInformation userInfo = null)
         {
             InitializeComponent();
             sunnyDB = new SunnyCornerCafeWebsite_DBEntities();

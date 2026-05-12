@@ -83,9 +83,9 @@ namespace SunnyCornerCafeApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cafe_bar {
+        internal static System.Drawing.Bitmap cafe_bar_V2 {
             get {
-                object obj = ResourceManager.GetObject("cafe-bar", resourceCulture);
+                object obj = ResourceManager.GetObject("cafe-bar_V2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,16 +163,6 @@ namespace SunnyCornerCafeApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo {
-            get {
-                object obj = ResourceManager.GetObject("logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Pastries_Main {
             get {
                 object obj = ResourceManager.GetObject("Pastries-Main", resourceCulture);
@@ -185,7 +175,17 @@ namespace SunnyCornerCafeApp.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Sunny_corner_cafe_logo {
             get {
-                object obj = ResourceManager.GetObject("Sunny corner cafe logo", resourceCulture);
+                object obj = ResourceManager.GetObject("Sunny_corner_cafe_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sunny_corner_Cafe_logo_V1 {
+            get {
+                object obj = ResourceManager.GetObject("Sunny_corner_Cafe_logo_V1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

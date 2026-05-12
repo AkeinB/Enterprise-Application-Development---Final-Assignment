@@ -48,20 +48,26 @@
             // 
             // BT_Pay
             // 
-            this.BT_Pay.Location = new System.Drawing.Point(106, 257);
+            this.BT_Pay.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.BT_Pay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Pay.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_Pay.Location = new System.Drawing.Point(124, 316);
+            this.BT_Pay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BT_Pay.Name = "BT_Pay";
-            this.BT_Pay.Size = new System.Drawing.Size(75, 23);
+            this.BT_Pay.Size = new System.Drawing.Size(88, 28);
             this.BT_Pay.TabIndex = 0;
             this.BT_Pay.Text = "Pay";
-            this.BT_Pay.UseVisualStyleBackColor = true;
+            this.BT_Pay.UseVisualStyleBackColor = false;
             this.BT_Pay.Click += new System.EventHandler(this.BT_Pay_Click);
             // 
             // RB_Cash
             // 
             this.RB_Cash.AutoSize = true;
-            this.RB_Cash.Location = new System.Drawing.Point(28, 56);
+            this.RB_Cash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RB_Cash.Location = new System.Drawing.Point(22, 68);
+            this.RB_Cash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RB_Cash.Name = "RB_Cash";
-            this.RB_Cash.Size = new System.Drawing.Size(49, 17);
+            this.RB_Cash.Size = new System.Drawing.Size(52, 20);
             this.RB_Cash.TabIndex = 1;
             this.RB_Cash.TabStop = true;
             this.RB_Cash.Text = "Cash";
@@ -71,9 +77,11 @@
             // RB_Card
             // 
             this.RB_Card.AutoSize = true;
-            this.RB_Card.Location = new System.Drawing.Point(28, 103);
+            this.RB_Card.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RB_Card.Location = new System.Drawing.Point(22, 126);
+            this.RB_Card.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RB_Card.Name = "RB_Card";
-            this.RB_Card.Size = new System.Drawing.Size(47, 17);
+            this.RB_Card.Size = new System.Drawing.Size(50, 20);
             this.RB_Card.TabIndex = 2;
             this.RB_Card.TabStop = true;
             this.RB_Card.Text = "Card";
@@ -93,116 +101,132 @@
             this.GB_Payment.Controls.Add(this.LB_Expiry);
             this.GB_Payment.Controls.Add(this.LB_CardNumber);
             this.GB_Payment.Controls.Add(this.LB_Name);
-            this.GB_Payment.Location = new System.Drawing.Point(38, 136);
+            this.GB_Payment.Location = new System.Drawing.Point(33, 166);
+            this.GB_Payment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GB_Payment.Name = "GB_Payment";
-            this.GB_Payment.Size = new System.Drawing.Size(285, 309);
+            this.GB_Payment.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GB_Payment.Size = new System.Drawing.Size(332, 380);
             this.GB_Payment.TabIndex = 3;
             this.GB_Payment.TabStop = false;
             this.GB_Payment.Text = "INFO";
             // 
             // MTB_CardNumber
             // 
-            this.MTB_CardNumber.Location = new System.Drawing.Point(106, 66);
+            this.MTB_CardNumber.Location = new System.Drawing.Point(124, 81);
+            this.MTB_CardNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MTB_CardNumber.Mask = "0000 0000 0000 0000";
             this.MTB_CardNumber.Name = "MTB_CardNumber";
-            this.MTB_CardNumber.Size = new System.Drawing.Size(173, 20);
+            this.MTB_CardNumber.Size = new System.Drawing.Size(201, 27);
             this.MTB_CardNumber.TabIndex = 12;
             // 
             // MTB_CVV
             // 
-            this.MTB_CVV.Location = new System.Drawing.Point(106, 171);
+            this.MTB_CVV.Location = new System.Drawing.Point(124, 210);
+            this.MTB_CVV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MTB_CVV.Mask = "000";
             this.MTB_CVV.Name = "MTB_CVV";
-            this.MTB_CVV.Size = new System.Drawing.Size(48, 20);
+            this.MTB_CVV.Size = new System.Drawing.Size(55, 27);
             this.MTB_CVV.TabIndex = 11;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(106, 100);
+            this.dateTimePicker1.Location = new System.Drawing.Point(124, 123);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(173, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(201, 27);
             this.dateTimePicker1.TabIndex = 10;
             // 
             // TB_MAddress
             // 
             this.TB_MAddress.AcceptsTab = true;
-            this.TB_MAddress.Location = new System.Drawing.Point(106, 136);
+            this.TB_MAddress.Location = new System.Drawing.Point(124, 167);
+            this.TB_MAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TB_MAddress.Name = "TB_MAddress";
-            this.TB_MAddress.Size = new System.Drawing.Size(173, 20);
+            this.TB_MAddress.Size = new System.Drawing.Size(201, 27);
             this.TB_MAddress.TabIndex = 7;
             // 
             // TB_CName
             // 
             this.TB_CName.AcceptsTab = true;
-            this.TB_CName.Location = new System.Drawing.Point(106, 30);
+            this.TB_CName.Location = new System.Drawing.Point(124, 37);
+            this.TB_CName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TB_CName.Name = "TB_CName";
-            this.TB_CName.Size = new System.Drawing.Size(173, 20);
+            this.TB_CName.Size = new System.Drawing.Size(201, 27);
             this.TB_CName.TabIndex = 6;
             // 
             // LB_CVV
             // 
             this.LB_CVV.AutoSize = true;
-            this.LB_CVV.Location = new System.Drawing.Point(18, 174);
+            this.LB_CVV.Location = new System.Drawing.Point(21, 214);
+            this.LB_CVV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_CVV.Name = "LB_CVV";
-            this.LB_CVV.Size = new System.Drawing.Size(28, 13);
+            this.LB_CVV.Size = new System.Drawing.Size(31, 16);
             this.LB_CVV.TabIndex = 4;
             this.LB_CVV.Text = "CVV";
             // 
             // LB_Address
             // 
             this.LB_Address.AutoSize = true;
-            this.LB_Address.Location = new System.Drawing.Point(18, 136);
+            this.LB_Address.Location = new System.Drawing.Point(21, 167);
+            this.LB_Address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Address.Name = "LB_Address";
-            this.LB_Address.Size = new System.Drawing.Size(81, 13);
+            this.LB_Address.Size = new System.Drawing.Size(96, 16);
             this.LB_Address.TabIndex = 3;
             this.LB_Address.Text = "Mailing Address";
             // 
             // LB_Expiry
             // 
             this.LB_Expiry.AutoSize = true;
-            this.LB_Expiry.Location = new System.Drawing.Point(18, 100);
+            this.LB_Expiry.Location = new System.Drawing.Point(21, 123);
+            this.LB_Expiry.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Expiry.Name = "LB_Expiry";
-            this.LB_Expiry.Size = new System.Drawing.Size(61, 13);
+            this.LB_Expiry.Size = new System.Drawing.Size(70, 16);
             this.LB_Expiry.TabIndex = 2;
             this.LB_Expiry.Text = "Expiry Date";
             // 
             // LB_CardNumber
             // 
             this.LB_CardNumber.AutoSize = true;
-            this.LB_CardNumber.Location = new System.Drawing.Point(18, 69);
+            this.LB_CardNumber.Location = new System.Drawing.Point(21, 85);
+            this.LB_CardNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_CardNumber.Name = "LB_CardNumber";
-            this.LB_CardNumber.Size = new System.Drawing.Size(69, 13);
+            this.LB_CardNumber.Size = new System.Drawing.Size(80, 16);
             this.LB_CardNumber.TabIndex = 1;
             this.LB_CardNumber.Text = "Card Number";
             // 
             // LB_Name
             // 
             this.LB_Name.AutoSize = true;
-            this.LB_Name.Location = new System.Drawing.Point(18, 37);
+            this.LB_Name.Location = new System.Drawing.Point(21, 46);
+            this.LB_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Name.Name = "LB_Name";
-            this.LB_Name.Size = new System.Drawing.Size(75, 13);
+            this.LB_Name.Size = new System.Drawing.Size(86, 16);
             this.LB_Name.TabIndex = 0;
             this.LB_Name.Text = "Name on Card";
             // 
             // LB_Payment
             // 
             this.LB_Payment.AutoSize = true;
-            this.LB_Payment.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_Payment.Location = new System.Drawing.Point(123, 9);
+            this.LB_Payment.Font = new System.Drawing.Font("Yu Gothic Medium", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Payment.Location = new System.Drawing.Point(114, 9);
+            this.LB_Payment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Payment.Name = "LB_Payment";
-            this.LB_Payment.Size = new System.Drawing.Size(131, 33);
+            this.LB_Payment.Size = new System.Drawing.Size(168, 45);
             this.LB_Payment.TabIndex = 4;
             this.LB_Payment.Text = "Pay Now";
             // 
             // UserPayment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 474);
+            this.BackColor = System.Drawing.Color.DarkKhaki;
+            this.ClientSize = new System.Drawing.Size(400, 566);
             this.Controls.Add(this.LB_Payment);
             this.Controls.Add(this.GB_Payment);
             this.Controls.Add(this.RB_Card);
             this.Controls.Add(this.RB_Cash);
+            this.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserPayment";
             this.Text = "Payment";
             this.GB_Payment.ResumeLayout(false);

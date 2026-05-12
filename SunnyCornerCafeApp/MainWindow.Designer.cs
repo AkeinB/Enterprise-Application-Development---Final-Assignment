@@ -88,7 +88,7 @@
             this.EditProfilesToolStripMenuItem.Name = "EditProfilesToolStripMenuItem";
             this.EditProfilesToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.EditProfilesToolStripMenuItem.Text = "Edit Profile";
-            this.EditProfilesToolStripMenuItem.Visible = false;
+            this.EditProfilesToolStripMenuItem.Click += new System.EventHandler(this.EditProfilesToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
@@ -221,7 +221,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackgroundImage = global::SunnyCornerCafeApp.Properties.Resources.logo;
             this.ClientSize = new System.Drawing.Size(767, 450);
             this.Controls.Add(this.PB_Logo);
             this.Controls.Add(this.label1);

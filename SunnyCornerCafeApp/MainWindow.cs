@@ -125,5 +125,11 @@ namespace SunnyCornerCafeApp
             var profile  = new UserInformation(_user);
             profile.ShowDialog();
         }
+
+        private void EditProfilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var editInformation = new EditInformation(_user.id, null);
+            editInformation.ShowDialog();
+        }
     }
 }

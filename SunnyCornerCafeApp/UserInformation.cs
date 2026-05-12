@@ -46,7 +46,7 @@ namespace SunnyCornerCafeApp
                 return;
             }
 
-            var editUserInfo = new EditInformation(this, _userInfo.id);
+            var editUserInfo = new EditInformation(_userInfo.id, this);
             editUserInfo.ShowDialog();
         }
 
@@ -73,6 +73,7 @@ namespace SunnyCornerCafeApp
 
         private void BTN_EditPassword_Click(object sender, EventArgs e)
         {
+
             if (_userInfo == null)
             {
                 MessageBox.Show("No user information available.");

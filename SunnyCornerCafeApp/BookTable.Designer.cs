@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookTable));
             this.LB_Date = new System.Windows.Forms.Label();
             this.LB_NumofPerson = new System.Windows.Forms.Label();
             this.LB_Area = new System.Windows.Forms.Label();
@@ -42,61 +43,73 @@
             // LB_Date
             // 
             this.LB_Date.AutoSize = true;
-            this.LB_Date.Location = new System.Drawing.Point(153, 97);
+            this.LB_Date.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Date.Location = new System.Drawing.Point(178, 119);
+            this.LB_Date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Date.Name = "LB_Date";
-            this.LB_Date.Size = new System.Drawing.Size(30, 13);
+            this.LB_Date.Size = new System.Drawing.Size(35, 16);
             this.LB_Date.TabIndex = 0;
             this.LB_Date.Text = "Date";
             // 
             // LB_NumofPerson
             // 
             this.LB_NumofPerson.AutoSize = true;
-            this.LB_NumofPerson.Location = new System.Drawing.Point(118, 286);
+            this.LB_NumofPerson.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_NumofPerson.Location = new System.Drawing.Point(138, 321);
+            this.LB_NumofPerson.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_NumofPerson.Name = "LB_NumofPerson";
-            this.LB_NumofPerson.Size = new System.Drawing.Size(97, 13);
+            this.LB_NumofPerson.Size = new System.Drawing.Size(117, 16);
             this.LB_NumofPerson.TabIndex = 2;
             this.LB_NumofPerson.Text = "Number of Persons";
             // 
             // LB_Area
             // 
             this.LB_Area.AutoSize = true;
-            this.LB_Area.Location = new System.Drawing.Point(154, 191);
+            this.LB_Area.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Area.Location = new System.Drawing.Point(180, 212);
+            this.LB_Area.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Area.Name = "LB_Area";
-            this.LB_Area.Size = new System.Drawing.Size(29, 13);
+            this.LB_Area.Size = new System.Drawing.Size(34, 16);
             this.LB_Area.TabIndex = 3;
             this.LB_Area.Text = "Area";
             // 
             // DTP_Date
             // 
-            this.DTP_Date.Location = new System.Drawing.Point(66, 126);
+            this.DTP_Date.Location = new System.Drawing.Point(77, 155);
+            this.DTP_Date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DTP_Date.Name = "DTP_Date";
-            this.DTP_Date.Size = new System.Drawing.Size(201, 20);
+            this.DTP_Date.Size = new System.Drawing.Size(234, 27);
             this.DTP_Date.TabIndex = 4;
             // 
             // TB_NumofPersons
             // 
-            this.TB_NumofPersons.Location = new System.Drawing.Point(66, 319);
+            this.TB_NumofPersons.Location = new System.Drawing.Point(77, 362);
+            this.TB_NumofPersons.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TB_NumofPersons.Maximum = 15;
             this.TB_NumofPersons.Name = "TB_NumofPersons";
-            this.TB_NumofPersons.Size = new System.Drawing.Size(201, 45);
+            this.TB_NumofPersons.Size = new System.Drawing.Size(234, 45);
             this.TB_NumofPersons.TabIndex = 6;
             // 
             // CL_Area
             // 
+            this.CL_Area.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.CL_Area.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CL_Area.FormattingEnabled = true;
             this.CL_Area.Items.AddRange(new object[] {
             "Inside",
             "Pergola "});
-            this.CL_Area.Location = new System.Drawing.Point(66, 207);
+            this.CL_Area.Location = new System.Drawing.Point(77, 232);
+            this.CL_Area.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CL_Area.Name = "CL_Area";
-            this.CL_Area.Size = new System.Drawing.Size(201, 34);
+            this.CL_Area.Size = new System.Drawing.Size(234, 44);
             this.CL_Area.TabIndex = 8;
             // 
             // LB_Reservation
             // 
             this.LB_Reservation.AutoSize = true;
             this.LB_Reservation.Font = new System.Drawing.Font("a Antara Distance", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_Reservation.Location = new System.Drawing.Point(78, 22);
+            this.LB_Reservation.Location = new System.Drawing.Point(91, 27);
+            this.LB_Reservation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Reservation.Name = "LB_Reservation";
             this.LB_Reservation.Size = new System.Drawing.Size(189, 34);
             this.LB_Reservation.TabIndex = 9;
@@ -104,19 +117,24 @@
             // 
             // BT_BookNow
             // 
-            this.BT_BookNow.Location = new System.Drawing.Point(105, 409);
+            this.BT_BookNow.BackColor = System.Drawing.Color.Khaki;
+            this.BT_BookNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_BookNow.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_BookNow.Location = new System.Drawing.Point(127, 439);
+            this.BT_BookNow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BT_BookNow.Name = "BT_BookNow";
-            this.BT_BookNow.Size = new System.Drawing.Size(131, 46);
+            this.BT_BookNow.Size = new System.Drawing.Size(153, 57);
             this.BT_BookNow.TabIndex = 10;
             this.BT_BookNow.Text = "Book Now";
-            this.BT_BookNow.UseVisualStyleBackColor = true;
+            this.BT_BookNow.UseVisualStyleBackColor = false;
             this.BT_BookNow.Click += new System.EventHandler(this.BT_BookNow_Click);
             // 
             // BookTable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 485);
+            this.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.ClientSize = new System.Drawing.Size(383, 528);
             this.Controls.Add(this.BT_BookNow);
             this.Controls.Add(this.LB_Reservation);
             this.Controls.Add(this.CL_Area);
@@ -125,6 +143,9 @@
             this.Controls.Add(this.LB_Area);
             this.Controls.Add(this.LB_NumofPerson);
             this.Controls.Add(this.LB_Date);
+            this.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BookTable";
             this.Text = "Book Table";
             ((System.ComponentModel.ISupportInitialize)(this.TB_NumofPersons)).EndInit();

@@ -300,13 +300,14 @@
     <None Include="Resources\Deli-Main.jpg" />
     <None Include="Resources\Pastries-Main.jpg" />
     <None Include="Resources\AdobeStock_2641401491.jpeg" />
-    <None Include="Resources\Sunny corner cafe logo1.png" />
     <None Include="Resources\cafe-bar1.png" />
     <None Include="Resources\Cocktails London-jpg.jpeg" />
     <None Include="Resources\coffee.jpg" />
     <None Include="Resources\dark-coffee.jpg" />
     <None Include="Resources\latte1.jpg" />
-    <None Include="Resources\logo.png" />
+    <None Include="Resources\Sunny_corner_Cafe_logo_V1.png" />
+    <None Include="Resources\cafe-bar_V2.png" />
+    <None Include="Resources\Sunny_corner_cafe_logo.png" />
     <Content Include="SunnyCornerCafeWebsite_DB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SunnyCornerCafeWebsite_DB.edmx</DependentUpon>
