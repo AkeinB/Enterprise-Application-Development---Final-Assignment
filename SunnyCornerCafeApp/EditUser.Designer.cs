@@ -152,11 +152,11 @@
             // LB_LableID
             // 
             this.LB_LableID.AutoSize = true;
-            this.LB_LableID.Location = new System.Drawing.Point(295, 9);
+            this.LB_LableID.Location = new System.Drawing.Point(265, 9);
             this.LB_LableID.Name = "LB_LableID";
-            this.LB_LableID.Size = new System.Drawing.Size(44, 13);
+            this.LB_LableID.Size = new System.Drawing.Size(74, 13);
             this.LB_LableID.TabIndex = 8;
-            this.LB_LableID.Text = "LableID";
+            this.LB_LableID.Text = "UserID Holder";
             this.LB_LableID.Visible = false;
             // 
             // EditUser

@@ -43,7 +43,11 @@
             this.LB_CardNumber = new System.Windows.Forms.Label();
             this.LB_Name = new System.Windows.Forms.Label();
             this.LB_Payment = new System.Windows.Forms.Label();
+            this.LB_Cash = new System.Windows.Forms.Label();
+            this.GB_Cash = new System.Windows.Forms.GroupBox();
+            this.BTN_Close = new System.Windows.Forms.Button();
             this.GB_Payment.SuspendLayout();
+            this.GB_Cash.SuspendLayout();
             this.SuspendLayout();
             // 
             // BT_Pay
@@ -52,7 +56,7 @@
             this.BT_Pay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_Pay.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_Pay.Location = new System.Drawing.Point(124, 316);
-            this.BT_Pay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BT_Pay.Margin = new System.Windows.Forms.Padding(4);
             this.BT_Pay.Name = "BT_Pay";
             this.BT_Pay.Size = new System.Drawing.Size(88, 28);
             this.BT_Pay.TabIndex = 0;
@@ -65,7 +69,7 @@
             this.RB_Cash.AutoSize = true;
             this.RB_Cash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RB_Cash.Location = new System.Drawing.Point(22, 68);
-            this.RB_Cash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RB_Cash.Margin = new System.Windows.Forms.Padding(4);
             this.RB_Cash.Name = "RB_Cash";
             this.RB_Cash.Size = new System.Drawing.Size(52, 20);
             this.RB_Cash.TabIndex = 1;
@@ -79,7 +83,7 @@
             this.RB_Card.AutoSize = true;
             this.RB_Card.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RB_Card.Location = new System.Drawing.Point(22, 126);
-            this.RB_Card.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RB_Card.Margin = new System.Windows.Forms.Padding(4);
             this.RB_Card.Name = "RB_Card";
             this.RB_Card.Size = new System.Drawing.Size(50, 20);
             this.RB_Card.TabIndex = 2;
@@ -102,9 +106,9 @@
             this.GB_Payment.Controls.Add(this.LB_CardNumber);
             this.GB_Payment.Controls.Add(this.LB_Name);
             this.GB_Payment.Location = new System.Drawing.Point(33, 166);
-            this.GB_Payment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GB_Payment.Margin = new System.Windows.Forms.Padding(4);
             this.GB_Payment.Name = "GB_Payment";
-            this.GB_Payment.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GB_Payment.Padding = new System.Windows.Forms.Padding(4);
             this.GB_Payment.Size = new System.Drawing.Size(332, 380);
             this.GB_Payment.TabIndex = 3;
             this.GB_Payment.TabStop = false;
@@ -113,7 +117,7 @@
             // MTB_CardNumber
             // 
             this.MTB_CardNumber.Location = new System.Drawing.Point(124, 81);
-            this.MTB_CardNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MTB_CardNumber.Margin = new System.Windows.Forms.Padding(4);
             this.MTB_CardNumber.Mask = "0000 0000 0000 0000";
             this.MTB_CardNumber.Name = "MTB_CardNumber";
             this.MTB_CardNumber.Size = new System.Drawing.Size(201, 27);
@@ -122,7 +126,7 @@
             // MTB_CVV
             // 
             this.MTB_CVV.Location = new System.Drawing.Point(124, 210);
-            this.MTB_CVV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MTB_CVV.Margin = new System.Windows.Forms.Padding(4);
             this.MTB_CVV.Mask = "000";
             this.MTB_CVV.Name = "MTB_CVV";
             this.MTB_CVV.Size = new System.Drawing.Size(55, 27);
@@ -131,7 +135,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(124, 123);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(201, 27);
             this.dateTimePicker1.TabIndex = 10;
@@ -140,7 +144,7 @@
             // 
             this.TB_MAddress.AcceptsTab = true;
             this.TB_MAddress.Location = new System.Drawing.Point(124, 167);
-            this.TB_MAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_MAddress.Margin = new System.Windows.Forms.Padding(4);
             this.TB_MAddress.Name = "TB_MAddress";
             this.TB_MAddress.Size = new System.Drawing.Size(201, 27);
             this.TB_MAddress.TabIndex = 7;
@@ -149,7 +153,7 @@
             // 
             this.TB_CName.AcceptsTab = true;
             this.TB_CName.Location = new System.Drawing.Point(124, 37);
-            this.TB_CName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_CName.Margin = new System.Windows.Forms.Padding(4);
             this.TB_CName.Name = "TB_CName";
             this.TB_CName.Size = new System.Drawing.Size(201, 27);
             this.TB_CName.TabIndex = 6;
@@ -215,22 +219,55 @@
             this.LB_Payment.TabIndex = 4;
             this.LB_Payment.Text = "Pay Now";
             // 
+            // LB_Cash
+            // 
+            this.LB_Cash.AutoSize = true;
+            this.LB_Cash.Location = new System.Drawing.Point(6, 14);
+            this.LB_Cash.Name = "LB_Cash";
+            this.LB_Cash.Size = new System.Drawing.Size(71, 16);
+            this.LB_Cash.TabIndex = 5;
+            this.LB_Cash.Text = "Pay on Pick";
+            this.LB_Cash.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // GB_Cash
+            // 
+            this.GB_Cash.Controls.Add(this.BTN_Close);
+            this.GB_Cash.Controls.Add(this.LB_Cash);
+            this.GB_Cash.Location = new System.Drawing.Point(104, 57);
+            this.GB_Cash.Name = "GB_Cash";
+            this.GB_Cash.Size = new System.Drawing.Size(214, 44);
+            this.GB_Cash.TabIndex = 6;
+            this.GB_Cash.TabStop = false;
+            // 
+            // BTN_Close
+            // 
+            this.BTN_Close.Location = new System.Drawing.Point(125, 14);
+            this.BTN_Close.Name = "BTN_Close";
+            this.BTN_Close.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Close.TabIndex = 6;
+            this.BTN_Close.Text = "Close";
+            this.BTN_Close.UseVisualStyleBackColor = true;
+            this.BTN_Close.Click += new System.EventHandler(this.BTN_Close_Click);
+            // 
             // UserPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkKhaki;
             this.ClientSize = new System.Drawing.Size(400, 566);
+            this.Controls.Add(this.GB_Cash);
             this.Controls.Add(this.LB_Payment);
             this.Controls.Add(this.GB_Payment);
             this.Controls.Add(this.RB_Card);
             this.Controls.Add(this.RB_Cash);
             this.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserPayment";
             this.Text = "Payment";
             this.GB_Payment.ResumeLayout(false);
             this.GB_Payment.PerformLayout();
+            this.GB_Cash.ResumeLayout(false);
+            this.GB_Cash.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +290,8 @@
         private System.Windows.Forms.MaskedTextBox MTB_CVV;
         private System.Windows.Forms.MaskedTextBox MTB_CardNumber;
         private System.Windows.Forms.Label LB_Payment;
+        private System.Windows.Forms.Label LB_Cash;
+        private System.Windows.Forms.GroupBox GB_Cash;
+        private System.Windows.Forms.Button BTN_Close;
     }
 }

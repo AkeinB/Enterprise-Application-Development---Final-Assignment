@@ -84,5 +84,10 @@ namespace SunnyCornerCafeApp
 
             GV_Cart.DataSource = cartItems; // shows cart contents
         }
+
+        private void BT_AddMore_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

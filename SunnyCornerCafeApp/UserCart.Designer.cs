@@ -74,6 +74,7 @@
             this.BT_AddMore.TabIndex = 2;
             this.BT_AddMore.Text = "Add More";
             this.BT_AddMore.UseVisualStyleBackColor = false;
+            this.BT_AddMore.Click += new System.EventHandler(this.BT_AddMore_Click);
             // 
             // BT_Back
             // 

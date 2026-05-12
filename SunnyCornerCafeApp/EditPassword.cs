@@ -17,7 +17,7 @@ namespace SunnyCornerCafeApp
         private readonly SunnyCornerCafeWebsite_DBEntities sunnyDB;
         private readonly int _id;
 
-        public EditPassword(int id )
+        public EditPassword(int id)
         {
             InitializeComponent();
             sunnyDB = new SunnyCornerCafeWebsite_DBEntities();
@@ -28,14 +28,7 @@ namespace SunnyCornerCafeApp
         {
             try
             {
-                DialogResult result = MessageBox.Show("Are you sure you want to save these changes?",
-                "Confirm Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (result != DialogResult.Yes)
-                {
-                    return;
-                }
-
+                
                 var userInfo = sunnyDB.Users.FirstOrDefault(u => u.id == _id);
 
                 if (userInfo != null)
@@ -75,12 +68,19 @@ namespace SunnyCornerCafeApp
                         return;
                     }
 
+                    DialogResult result = MessageBox.Show("Are you sure you want to save these changes?",
+                    "Confirm Password Change", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result != DialogResult.Yes)
+                    {
+                        return;
+                    }
                     // Update password
                     userInfo.Password = newPwHashed;
                     sunnyDB.SaveChanges();
 
                     MessageBox.Show("Password Updated");
-                    Close();
+                    
                 }
                 
             }
@@ -89,6 +89,11 @@ namespace SunnyCornerCafeApp
 
                 MessageBox.Show("Fill out all fields");
             }
+        }
+
+        private void BTN_Close_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

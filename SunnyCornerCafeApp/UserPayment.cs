@@ -42,6 +42,7 @@ namespace SunnyCornerCafeApp
         {
             if (RB_Cash.Checked)
             {
+                GB_Cash.Enabled = true;
                 GB_Payment.Enabled = false;
             }
         }
@@ -50,8 +51,19 @@ namespace SunnyCornerCafeApp
         {
             if (RB_Card.Checked)
             {
+                GB_Cash.Enabled = false;
                 GB_Payment.Enabled = true;
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTN_Close_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
