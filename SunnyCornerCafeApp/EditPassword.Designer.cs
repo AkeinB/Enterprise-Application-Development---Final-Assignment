@@ -102,7 +102,7 @@
             this.BTN_Submit.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.BTN_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Submit.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Submit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BTN_Submit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BTN_Submit.Location = new System.Drawing.Point(82, 339);
             this.BTN_Submit.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_Submit.Name = "BTN_Submit";
@@ -117,7 +117,7 @@
             this.BTN_Close.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Close.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BTN_Close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BTN_Close.Location = new System.Drawing.Point(217, 339);
             this.BTN_Close.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_Close.Name = "BTN_Close";
@@ -142,7 +142,7 @@
             this.AcceptButton = this.BTN_Submit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(420, 427);
             this.Controls.Add(this.LB_EditPassword);
             this.Controls.Add(this.BTN_Close);

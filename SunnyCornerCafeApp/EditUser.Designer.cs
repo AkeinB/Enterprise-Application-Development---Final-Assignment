@@ -55,7 +55,7 @@
             this.tableLayoutPanel1.Controls.Add(this.LB_UserType, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.CB_UserType, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(43, 114);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -71,7 +71,7 @@
             "Active",
             "Inactive"});
             this.CB_UserStatus.Location = new System.Drawing.Point(167, 132);
-            this.CB_UserStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_UserStatus.Margin = new System.Windows.Forms.Padding(4);
             this.CB_UserStatus.Name = "CB_UserStatus";
             this.CB_UserStatus.Size = new System.Drawing.Size(121, 24);
             this.CB_UserStatus.TabIndex = 8;
@@ -91,7 +91,7 @@
             // TB_UserName
             // 
             this.TB_UserName.Location = new System.Drawing.Point(167, 4);
-            this.TB_UserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TB_UserName.Margin = new System.Windows.Forms.Padding(4);
             this.TB_UserName.Name = "TB_UserName";
             this.TB_UserName.Size = new System.Drawing.Size(155, 27);
             this.TB_UserName.TabIndex = 4;
@@ -122,7 +122,7 @@
             // 
             this.CB_UserType.FormattingEnabled = true;
             this.CB_UserType.Location = new System.Drawing.Point(167, 68);
-            this.CB_UserType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_UserType.Margin = new System.Windows.Forms.Padding(4);
             this.CB_UserType.Name = "CB_UserType";
             this.CB_UserType.Size = new System.Drawing.Size(121, 24);
             this.CB_UserType.TabIndex = 5;
@@ -132,9 +132,9 @@
             this.BTN_Cancel.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.BTN_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Cancel.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BTN_Cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BTN_Cancel.Location = new System.Drawing.Point(238, 360);
-            this.BTN_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTN_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_Cancel.Name = "BTN_Cancel";
             this.BTN_Cancel.Size = new System.Drawing.Size(121, 53);
             this.BTN_Cancel.TabIndex = 6;
@@ -147,9 +147,9 @@
             this.BTN_Submit.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.BTN_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Submit.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Submit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BTN_Submit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BTN_Submit.Location = new System.Drawing.Point(62, 360);
-            this.BTN_Submit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTN_Submit.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_Submit.Name = "BTN_Submit";
             this.BTN_Submit.Size = new System.Drawing.Size(121, 53);
             this.BTN_Submit.TabIndex = 4;
@@ -184,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(410, 478);
             this.Controls.Add(this.LB_LableID);
             this.Controls.Add(this.LB_EditUser);
@@ -194,7 +194,7 @@
             this.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EditUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit User";

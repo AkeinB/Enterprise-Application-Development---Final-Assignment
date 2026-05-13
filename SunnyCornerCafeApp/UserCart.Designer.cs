@@ -42,9 +42,10 @@
             // 
             // BT_Checkout
             // 
-            this.BT_Checkout.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BT_Checkout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BT_Checkout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_Checkout.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_Checkout.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.BT_Checkout.Location = new System.Drawing.Point(198, 369);
             this.BT_Checkout.Name = "BT_Checkout";
             this.BT_Checkout.Size = new System.Drawing.Size(142, 62);
@@ -56,18 +57,20 @@
             // LB_YourCart
             // 
             this.LB_YourCart.AutoSize = true;
-            this.LB_YourCart.Font = new System.Drawing.Font("Yu Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_YourCart.Location = new System.Drawing.Point(80, 9);
+            this.LB_YourCart.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_YourCart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LB_YourCart.Location = new System.Drawing.Point(92, 23);
             this.LB_YourCart.Name = "LB_YourCart";
-            this.LB_YourCart.Size = new System.Drawing.Size(172, 45);
+            this.LB_YourCart.Size = new System.Drawing.Size(166, 42);
             this.LB_YourCart.TabIndex = 1;
             this.LB_YourCart.Text = "Your Cart";
             // 
             // BT_AddMore
             // 
-            this.BT_AddMore.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BT_AddMore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BT_AddMore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_AddMore.Font = new System.Drawing.Font("Yu Gothic Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_AddMore.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_AddMore.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.BT_AddMore.Location = new System.Drawing.Point(88, 391);
             this.BT_AddMore.Name = "BT_AddMore";
             this.BT_AddMore.Size = new System.Drawing.Size(104, 29);
@@ -78,7 +81,7 @@
             // 
             // BT_Back
             // 
-            this.BT_Back.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.BT_Back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BT_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_Back.ForeColor = System.Drawing.Color.PaleGoldenrod;
