@@ -80,11 +80,12 @@ namespace SunnyCornerCafeApp
         public void PopulateGrid()
         {
             var orders = sunnyDB.Orders
+                .Where(o => o.UserId == _userInfo.id)   // only this user's orders
                 .Select(o => new
                 {
                     o.id,
                     o.OrderNo,
-                    UserName = o.User.Username,   // navigate relationship
+                    UserName = o.User.Username,
                     o.OrderDate,
                     o.Status
                 })
@@ -98,10 +99,8 @@ namespace SunnyCornerCafeApp
 
             GV_OrderList.Columns["id"].Visible = false;
 
-            // Format the date column nicely
             GV_OrderList.Columns["OrderDate"].DefaultCellStyle.Format = "yyyy-MM-dd";
         }
 
-        
     }
 }

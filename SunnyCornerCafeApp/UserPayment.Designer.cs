@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserPayment));
             this.BT_Pay = new System.Windows.Forms.Button();
             this.RB_Cash = new System.Windows.Forms.RadioButton();
             this.RB_Card = new System.Windows.Forms.RadioButton();
@@ -52,13 +53,14 @@
             // 
             // BT_Pay
             // 
-            this.BT_Pay.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.BT_Pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BT_Pay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_Pay.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BT_Pay.Location = new System.Drawing.Point(124, 316);
+            this.BT_Pay.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.BT_Pay.Location = new System.Drawing.Point(89, 295);
             this.BT_Pay.Margin = new System.Windows.Forms.Padding(4);
             this.BT_Pay.Name = "BT_Pay";
-            this.BT_Pay.Size = new System.Drawing.Size(88, 28);
+            this.BT_Pay.Size = new System.Drawing.Size(123, 49);
             this.BT_Pay.TabIndex = 0;
             this.BT_Pay.Text = "Pay";
             this.BT_Pay.UseVisualStyleBackColor = false;
@@ -68,7 +70,7 @@
             // 
             this.RB_Cash.AutoSize = true;
             this.RB_Cash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RB_Cash.Location = new System.Drawing.Point(22, 68);
+            this.RB_Cash.Location = new System.Drawing.Point(22, 85);
             this.RB_Cash.Margin = new System.Windows.Forms.Padding(4);
             this.RB_Cash.Name = "RB_Cash";
             this.RB_Cash.Size = new System.Drawing.Size(52, 20);
@@ -211,11 +213,12 @@
             // LB_Payment
             // 
             this.LB_Payment.AutoSize = true;
-            this.LB_Payment.Font = new System.Drawing.Font("Yu Gothic Medium", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Payment.Font = new System.Drawing.Font("Yu Gothic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Payment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.LB_Payment.Location = new System.Drawing.Point(114, 9);
             this.LB_Payment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Payment.Name = "LB_Payment";
-            this.LB_Payment.Size = new System.Drawing.Size(168, 45);
+            this.LB_Payment.Size = new System.Drawing.Size(155, 42);
             this.LB_Payment.TabIndex = 4;
             this.LB_Payment.Text = "Pay Now";
             // 
@@ -224,16 +227,16 @@
             this.LB_Cash.AutoSize = true;
             this.LB_Cash.Location = new System.Drawing.Point(6, 14);
             this.LB_Cash.Name = "LB_Cash";
-            this.LB_Cash.Size = new System.Drawing.Size(71, 16);
+            this.LB_Cash.Size = new System.Drawing.Size(90, 16);
             this.LB_Cash.TabIndex = 5;
-            this.LB_Cash.Text = "Pay on Pick";
+            this.LB_Cash.Text = "Pay on Pick Up";
             this.LB_Cash.Click += new System.EventHandler(this.label1_Click);
             // 
             // GB_Cash
             // 
             this.GB_Cash.Controls.Add(this.BTN_Close);
             this.GB_Cash.Controls.Add(this.LB_Cash);
-            this.GB_Cash.Location = new System.Drawing.Point(104, 57);
+            this.GB_Cash.Location = new System.Drawing.Point(128, 70);
             this.GB_Cash.Name = "GB_Cash";
             this.GB_Cash.Size = new System.Drawing.Size(214, 44);
             this.GB_Cash.TabIndex = 6;
@@ -241,19 +244,23 @@
             // 
             // BTN_Close
             // 
-            this.BTN_Close.Location = new System.Drawing.Point(125, 14);
+            this.BTN_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Close.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Close.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.BTN_Close.Location = new System.Drawing.Point(125, 12);
             this.BTN_Close.Name = "BTN_Close";
-            this.BTN_Close.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Close.Size = new System.Drawing.Size(75, 30);
             this.BTN_Close.TabIndex = 6;
             this.BTN_Close.Text = "Close";
-            this.BTN_Close.UseVisualStyleBackColor = true;
+            this.BTN_Close.UseVisualStyleBackColor = false;
             this.BTN_Close.Click += new System.EventHandler(this.BTN_Close_Click);
             // 
             // UserPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(400, 566);
             this.Controls.Add(this.GB_Cash);
             this.Controls.Add(this.LB_Payment);
@@ -261,6 +268,7 @@
             this.Controls.Add(this.RB_Card);
             this.Controls.Add(this.RB_Cash);
             this.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserPayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

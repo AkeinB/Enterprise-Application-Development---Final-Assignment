@@ -55,12 +55,12 @@
             // LB_Password
             // 
             this.LB_Password.AutoSize = true;
-            this.LB_Password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.LB_Password.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Password.BackColor = System.Drawing.Color.Transparent;
+            this.LB_Password.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Password.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.LB_Password.Location = new System.Drawing.Point(27, 316);
             this.LB_Password.Name = "LB_Password";
-            this.LB_Password.Size = new System.Drawing.Size(63, 16);
+            this.LB_Password.Size = new System.Drawing.Size(71, 17);
             this.LB_Password.TabIndex = 10;
             this.LB_Password.Text = "Password";
             // 
@@ -75,11 +75,11 @@
             // 
             this.LB_UserName.AutoSize = true;
             this.LB_UserName.BackColor = System.Drawing.Color.Transparent;
-            this.LB_UserName.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_UserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.LB_UserName.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_UserName.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.LB_UserName.Location = new System.Drawing.Point(28, 196);
             this.LB_UserName.Name = "LB_UserName";
-            this.LB_UserName.Size = new System.Drawing.Size(71, 16);
+            this.LB_UserName.Size = new System.Drawing.Size(80, 17);
             this.LB_UserName.TabIndex = 8;
             this.LB_UserName.Text = "User Name";
             // 
@@ -87,34 +87,35 @@
             // 
             this.LB_WelcomeToParadise.AutoSize = true;
             this.LB_WelcomeToParadise.BackColor = System.Drawing.Color.Transparent;
-            this.LB_WelcomeToParadise.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_WelcomeToParadise.ForeColor = System.Drawing.Color.Cornsilk;
-            this.LB_WelcomeToParadise.Location = new System.Drawing.Point(37, 145);
+            this.LB_WelcomeToParadise.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_WelcomeToParadise.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.LB_WelcomeToParadise.Location = new System.Drawing.Point(27, 145);
             this.LB_WelcomeToParadise.Name = "LB_WelcomeToParadise";
-            this.LB_WelcomeToParadise.Size = new System.Drawing.Size(221, 19);
+            this.LB_WelcomeToParadise.Size = new System.Drawing.Size(238, 21);
             this.LB_WelcomeToParadise.TabIndex = 7;
             this.LB_WelcomeToParadise.Text = "Welcome to Slice of Paradise";
             // 
             // LB_SignInHere
             // 
             this.LB_SignInHere.AutoSize = true;
-            this.LB_SignInHere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.LB_SignInHere.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_SignInHere.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.LB_SignInHere.Location = new System.Drawing.Point(47, 495);
+            this.LB_SignInHere.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.LB_SignInHere.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_SignInHere.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LB_SignInHere.Location = new System.Drawing.Point(40, 493);
             this.LB_SignInHere.Name = "LB_SignInHere";
-            this.LB_SignInHere.Size = new System.Drawing.Size(202, 28);
+            this.LB_SignInHere.Size = new System.Drawing.Size(225, 32);
             this.LB_SignInHere.TabIndex = 9;
             this.LB_SignInHere.Text = "Already Have An Account? Sign In Here\r\n\r\n";
-            this.LB_SignInHere.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LB_SignInHere.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.LB_SignInHere.Click += new System.EventHandler(this.LB_SignInHere_Click);
             // 
             // BTN_SignUp
             // 
-            this.BTN_SignUp.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN_SignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BTN_SignUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BTN_SignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_SignUp.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_SignUp.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_SignUp.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.BTN_SignUp.Location = new System.Drawing.Point(27, 443);
             this.BTN_SignUp.Name = "BTN_SignUp";
             this.BTN_SignUp.Size = new System.Drawing.Size(250, 50);
@@ -134,12 +135,12 @@
             // LB_ConfirmPassword
             // 
             this.LB_ConfirmPassword.AutoSize = true;
-            this.LB_ConfirmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.LB_ConfirmPassword.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_ConfirmPassword.BackColor = System.Drawing.Color.Transparent;
+            this.LB_ConfirmPassword.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_ConfirmPassword.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.LB_ConfirmPassword.Location = new System.Drawing.Point(26, 379);
             this.LB_ConfirmPassword.Name = "LB_ConfirmPassword";
-            this.LB_ConfirmPassword.Size = new System.Drawing.Size(113, 16);
+            this.LB_ConfirmPassword.Size = new System.Drawing.Size(126, 17);
             this.LB_ConfirmPassword.TabIndex = 13;
             this.LB_ConfirmPassword.Text = "Confirm Password";
             // 
@@ -154,21 +155,21 @@
             // 
             this.LB_Email.AutoSize = true;
             this.LB_Email.BackColor = System.Drawing.Color.Transparent;
-            this.LB_Email.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_Email.ForeColor = System.Drawing.Color.Cornsilk;
+            this.LB_Email.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Email.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.LB_Email.Location = new System.Drawing.Point(27, 252);
             this.LB_Email.Name = "LB_Email";
-            this.LB_Email.Size = new System.Drawing.Size(39, 16);
+            this.LB_Email.Size = new System.Drawing.Size(44, 17);
             this.LB_Email.TabIndex = 15;
             this.LB_Email.Text = "Email";
             // 
             // PB_SignInImage
             // 
-            this.PB_SignInImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PB_SignInImage.Image = global::SunnyCornerCafeApp.Properties.Resources._292_2924858_user_icon_business_man_flat_png_transparent_png;
-            this.PB_SignInImage.Location = new System.Drawing.Point(88, 36);
+            this.PB_SignInImage.BackColor = System.Drawing.Color.Transparent;
+            this.PB_SignInImage.Image = global::SunnyCornerCafeApp.Properties.Resources.Sunny_corner_cafe_logo;
+            this.PB_SignInImage.Location = new System.Drawing.Point(70, 22);
             this.PB_SignInImage.Name = "PB_SignInImage";
-            this.PB_SignInImage.Size = new System.Drawing.Size(112, 106);
+            this.PB_SignInImage.Size = new System.Drawing.Size(141, 120);
             this.PB_SignInImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_SignInImage.TabIndex = 6;
             this.PB_SignInImage.TabStop = false;
@@ -179,7 +180,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.BackgroundImage = global::SunnyCornerCafeApp.Properties.Resources.dark_coffee;
+            this.BackgroundImage = global::SunnyCornerCafeApp.Properties.Resources.dark_coffee_png;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(289, 580);
             this.Controls.Add(this.TB_Email);

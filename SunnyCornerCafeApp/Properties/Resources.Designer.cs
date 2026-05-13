@@ -93,9 +93,9 @@ namespace SunnyCornerCafeApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cocktails_London_jpg {
+        internal static System.Drawing.Bitmap Cocktails_London {
             get {
-                object obj = ResourceManager.GetObject("Cocktails London-jpg", resourceCulture);
+                object obj = ResourceManager.GetObject("Cocktails_London", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace SunnyCornerCafeApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dark_coffee {
+        internal static System.Drawing.Bitmap dark_coffee_png {
             get {
-                object obj = ResourceManager.GetObject("dark-coffee", resourceCulture);
+                object obj = ResourceManager.GetObject("dark-coffee.png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,39 @@ namespace SunnyCornerCafeApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Drop1 {
+            get {
+                object obj = ResourceManager.GetObject("Drop1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Drop2 {
+            get {
+                object obj = ResourceManager.GetObject("Drop2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hot_Drinks_Main {
             get {
                 object obj = ResourceManager.GetObject("Hot-Drinks-Main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iced_mocha {
+            get {
+                object obj = ResourceManager.GetObject("iced-mocha", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +196,16 @@ namespace SunnyCornerCafeApp.Properties {
         internal static System.Drawing.Bitmap Pastries_Main {
             get {
                 object obj = ResourceManager.GetObject("Pastries-Main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sandwich {
+            get {
+                object obj = ResourceManager.GetObject("sandwich", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
