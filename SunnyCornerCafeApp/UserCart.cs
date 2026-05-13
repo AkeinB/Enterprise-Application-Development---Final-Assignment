@@ -64,6 +64,9 @@ namespace SunnyCornerCafeApp
                 sunnyDB.Carts.RemoveRange(cartItems); // clear cart
                 sunnyDB.SaveChanges();
 
+                var payment = new UserPayment();
+                payment.ShowDialog();
+                Close();
             }
             catch (Exception)
             {
@@ -71,8 +74,6 @@ namespace SunnyCornerCafeApp
                 MessageBox.Show("An Error Occurred while");
             }
 
-            var payment = new UserPayment();
-            payment.ShowDialog();
         }
 
         private void UserCart_Load(object sender, EventArgs e)

@@ -15,13 +15,15 @@ namespace SunnyCornerCafeApp
     public partial class EditPassword : Form
     {
         private readonly SunnyCornerCafeWebsite_DBEntities sunnyDB;
+        private readonly MainWindow _mainWindow;
         private readonly int _id;
 
-        public EditPassword(int id)
+        public EditPassword(int id, MainWindow main = null )
         {
             InitializeComponent();
             sunnyDB = new SunnyCornerCafeWebsite_DBEntities();
             _id = id;
+            _mainWindow = main;
         }
 
         private void BTN_Submit_Click(object sender, EventArgs e)
@@ -81,6 +83,10 @@ namespace SunnyCornerCafeApp
 
                     MessageBox.Show("Password Updated");
                     
+
+                    _mainWindow.HideUpdatePwPrompt();
+
+                    Close();
                 }
                 
             }

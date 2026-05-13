@@ -47,6 +47,7 @@
             this.BT_Deli = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.PB_Logo = new System.Windows.Forms.PictureBox();
+            this.BTN_UpdatePwPrompt = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Logo)).BeginInit();
             this.SuspendLayout();
@@ -117,6 +118,7 @@
             this.ordersToolStripMenuItem2.Name = "ordersToolStripMenuItem2";
             this.ordersToolStripMenuItem2.Size = new System.Drawing.Size(54, 20);
             this.ordersToolStripMenuItem2.Text = "Orders";
+            this.ordersToolStripMenuItem2.Click += new System.EventHandler(this.ordersToolStripMenuItem2_Click);
             // 
             // cartToolStripMenuItem
             // 
@@ -216,12 +218,24 @@
             this.PB_Logo.TabIndex = 11;
             this.PB_Logo.TabStop = false;
             // 
+            // BTN_UpdatePwPrompt
+            // 
+            this.BTN_UpdatePwPrompt.Location = new System.Drawing.Point(461, 27);
+            this.BTN_UpdatePwPrompt.Name = "BTN_UpdatePwPrompt";
+            this.BTN_UpdatePwPrompt.Size = new System.Drawing.Size(289, 42);
+            this.BTN_UpdatePwPrompt.TabIndex = 12;
+            this.BTN_UpdatePwPrompt.Text = "You are useing a default password, Click here to Update password!";
+            this.BTN_UpdatePwPrompt.UseVisualStyleBackColor = true;
+            this.BTN_UpdatePwPrompt.Visible = false;
+            this.BTN_UpdatePwPrompt.Click += new System.EventHandler(this.BTN_UpdatePwPrompt_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(767, 450);
+            this.Controls.Add(this.BTN_UpdatePwPrompt);
             this.Controls.Add(this.PB_Logo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BT_Deli);
@@ -266,5 +280,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.PictureBox PB_Logo;
+        private System.Windows.Forms.Button BTN_UpdatePwPrompt;
     }
 }

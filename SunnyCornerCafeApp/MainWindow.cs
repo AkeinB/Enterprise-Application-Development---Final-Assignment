@@ -82,10 +82,32 @@ namespace SunnyCornerCafeApp
         //checks what type of user logged in and adjust what they can see or do
         private void MainWindow_Load(object sender, EventArgs e)
         {
-            if(_roleName != "admin")
+            if (_roleName != "admin")
             {
                 managerUsersToolStripMenuItem.Visible = false;
             }
+
+            if (_user.Password == Utils.DefaultHashPassword())
+            {
+
+                DialogResult result = MessageBox.Show("Your are using a default password, would you like to update it now?",
+               "or later", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+
+                    var editpassword = new EditPassword(_user.id, this);
+                    editpassword.ShowDialog();
+
+                }
+
+            }
+
+            if (_user.Password == Utils.DefaultHashPassword())
+            {
+                BTN_UpdatePwPrompt.Visible = true;
+            }
+
         }
 
         private void managerUsersToolStripMenuItem_Click(object sender, EventArgs e)
@@ -122,14 +144,35 @@ namespace SunnyCornerCafeApp
 
         private void accountToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var profile  = new UserInformation(_user);
-            profile.ShowDialog();
+            if (!Utils.FormIsOpen("UserInformation"))
+            {
+                var profile = new UserInformation(_user);
+                profile.Show();
+            }
         }
 
         private void EditProfilesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var editInformation = new EditInformation(_user.id, null);
             editInformation.ShowDialog();
+        }
+
+        private void ordersToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            var orders = new Orders(_user);
+            orders.ShowDialog();
+        }
+
+        private void BTN_UpdatePwPrompt_Click(object sender, EventArgs e)
+        {
+            var editPassword = new EditPassword(_user.id, this);
+            editPassword.ShowDialog();
+
+        }
+
+        public void HideUpdatePwPrompt()
+        {
+            BTN_UpdatePwPrompt.Visible = false;
         }
     }
 }

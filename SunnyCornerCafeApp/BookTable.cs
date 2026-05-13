@@ -20,7 +20,7 @@ namespace SunnyCornerCafeApp
         private void BT_BookNow_Click(object sender, EventArgs e)
         {
             var payment = new UserPayment();
-            payment.Show();
+            payment.ShowDialog();
         }
     }
 }

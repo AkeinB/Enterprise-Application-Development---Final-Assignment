@@ -48,10 +48,12 @@
             // 
             // PB_UserPicture
             // 
+            this.PB_UserPicture.Image = global::SunnyCornerCafeApp.Properties.Resources._292_2924858_user_icon_business_man_flat_png_transparent_png;
             this.PB_UserPicture.Location = new System.Drawing.Point(13, 58);
             this.PB_UserPicture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PB_UserPicture.Name = "PB_UserPicture";
             this.PB_UserPicture.Size = new System.Drawing.Size(193, 231);
+            this.PB_UserPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_UserPicture.TabIndex = 0;
             this.PB_UserPicture.TabStop = false;
             // 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,6 @@ namespace SunnyCornerCafeApp
 
         public void PopulateField()
         {
-           
             if (_userInfo != null)
             {
                 LB_Username.Text = _userInfo.Username;
@@ -33,9 +33,24 @@ namespace SunnyCornerCafeApp
                 TB_Email.Text = _userInfo.Email;
                 TB_Address.Text = _userInfo.Address;
                 TB_CreateDate.Text = _userInfo.CreatedDate.ToString("yyyy-MM-dd");
-            }
 
+                // Load image if exists
+                if (!string.IsNullOrEmpty(_userInfo.ImageUrl))
+                {
+                    string fullPath = Path.Combine(Application.StartupPath, _userInfo.ImageUrl);
+                    if (File.Exists(fullPath))
+                    {
+                        // Dispose old image to avoid file lock
+                        if (PB_UserPicture.Image != null)
+                        {
+                            PB_UserPicture.Image.Dispose();
+                        }
+                        PB_UserPicture.Image = Image.FromFile(fullPath);
+                    }
+                }
+            }
         }
+
 
         private void BT_Edit_Click(object sender, EventArgs e)
         {
@@ -56,20 +71,32 @@ namespace SunnyCornerCafeApp
         }
         public void RefreshFields()
         {
-            using (var db = new SunnyCornerCafeWebsite_DBEntities())
+            var updatedUser = sunnyDB.Users.FirstOrDefault(u => u.id == _userInfo.id);
+            if (updatedUser != null)
             {
-                var updatedUser = db.Users.FirstOrDefault(u => u.id == _userInfo.id);
-                if (updatedUser != null)
+                LB_Username.Text = updatedUser.Username;
+                TB_Name.Text = updatedUser.Name;
+                TB_TelephoneNumber.Text = updatedUser.Mobile;
+                TB_Email.Text = updatedUser.Email;
+                TB_Address.Text = updatedUser.Address;
+                TB_CreateDate.Text = updatedUser.CreatedDate.ToString("yyyy-MM-dd");
+
+                // Reload image
+                if (!string.IsNullOrEmpty(updatedUser.ImageUrl))
                 {
-                    LB_Username.Text = updatedUser.Username;
-                    TB_Name.Text = updatedUser.Name;
-                    TB_TelephoneNumber.Text = updatedUser.Mobile;
-                    TB_Email.Text = updatedUser.Email;
-                    TB_Address.Text = updatedUser.Address;
-                    TB_CreateDate.Text = updatedUser.CreatedDate.ToString("yyyy-MM-dd");
+                    string fullPath = Path.Combine(Application.StartupPath, updatedUser.ImageUrl);
+                    if (File.Exists(fullPath))
+                    {
+                        if (PB_UserPicture.Image != null)
+                        {
+                            PB_UserPicture.Image.Dispose();
+                        }
+                        PB_UserPicture.Image = Image.FromFile(fullPath);
+                    }
                 }
             }
         }
+
 
         private void BTN_EditPassword_Click(object sender, EventArgs e)
         {
