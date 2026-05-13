@@ -154,7 +154,7 @@
             this.BT_Orders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_Orders.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_Orders.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.BT_Orders.Location = new System.Drawing.Point(32, 278);
+            this.BT_Orders.Location = new System.Drawing.Point(32, 272);
             this.BT_Orders.Name = "BT_Orders";
             this.BT_Orders.Size = new System.Drawing.Size(145, 38);
             this.BT_Orders.TabIndex = 2;
@@ -168,7 +168,7 @@
             this.BT_Cart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_Cart.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BT_Cart.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.BT_Cart.Location = new System.Drawing.Point(32, 331);
+            this.BT_Cart.Location = new System.Drawing.Point(32, 328);
             this.BT_Cart.Name = "BT_Cart";
             this.BT_Cart.Size = new System.Drawing.Size(145, 38);
             this.BT_Cart.TabIndex = 3;
