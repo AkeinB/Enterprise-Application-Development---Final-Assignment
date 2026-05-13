@@ -42,9 +42,11 @@
             // 
             // BTN_Submit
             // 
-            this.BTN_Submit.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.BTN_Submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BTN_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Submit.Location = new System.Drawing.Point(24, 307);
+            this.BTN_Submit.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Submit.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.BTN_Submit.Location = new System.Drawing.Point(34, 374);
             this.BTN_Submit.Name = "BTN_Submit";
             this.BTN_Submit.Size = new System.Drawing.Size(104, 46);
             this.BTN_Submit.TabIndex = 0;
@@ -61,19 +63,19 @@
             this.tableLayoutPanel1.Controls.Add(this.LB_UserName, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.TB_UserName, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.CB_UserType, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(24, 154);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(25, 176);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(234, 95);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(246, 112);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // LB_UserType
             // 
             this.LB_UserType.AutoSize = true;
             this.LB_UserType.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_UserType.Location = new System.Drawing.Point(3, 47);
+            this.LB_UserType.Location = new System.Drawing.Point(3, 56);
             this.LB_UserType.Name = "LB_UserType";
             this.LB_UserType.Size = new System.Drawing.Size(69, 17);
             this.LB_UserType.TabIndex = 6;
@@ -91,7 +93,7 @@
             // 
             // TB_UserName
             // 
-            this.TB_UserName.Location = new System.Drawing.Point(120, 3);
+            this.TB_UserName.Location = new System.Drawing.Point(126, 3);
             this.TB_UserName.Name = "TB_UserName";
             this.TB_UserName.Size = new System.Drawing.Size(104, 25);
             this.TB_UserName.TabIndex = 4;
@@ -99,7 +101,7 @@
             // CB_UserType
             // 
             this.CB_UserType.FormattingEnabled = true;
-            this.CB_UserType.Location = new System.Drawing.Point(120, 50);
+            this.CB_UserType.Location = new System.Drawing.Point(126, 59);
             this.CB_UserType.Name = "CB_UserType";
             this.CB_UserType.Size = new System.Drawing.Size(104, 22);
             this.CB_UserType.TabIndex = 5;
@@ -107,18 +109,21 @@
             // LB_AddUser
             // 
             this.LB_AddUser.AutoSize = true;
-            this.LB_AddUser.Font = new System.Drawing.Font("Yu Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_AddUser.Location = new System.Drawing.Point(35, 66);
+            this.LB_AddUser.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_AddUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LB_AddUser.Location = new System.Drawing.Point(64, 56);
             this.LB_AddUser.Name = "LB_AddUser";
-            this.LB_AddUser.Size = new System.Drawing.Size(192, 51);
+            this.LB_AddUser.Size = new System.Drawing.Size(163, 42);
             this.LB_AddUser.TabIndex = 2;
             this.LB_AddUser.Text = "Add User";
             // 
             // BTN_Cancel
             // 
-            this.BTN_Cancel.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.BTN_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BTN_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Cancel.Location = new System.Drawing.Point(144, 307);
+            this.BTN_Cancel.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Cancel.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.BTN_Cancel.Location = new System.Drawing.Point(154, 374);
             this.BTN_Cancel.Name = "BTN_Cancel";
             this.BTN_Cancel.Size = new System.Drawing.Size(104, 46);
             this.BTN_Cancel.TabIndex = 3;
@@ -131,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(270, 397);
+            this.ClientSize = new System.Drawing.Size(300, 473);
             this.Controls.Add(this.BTN_Cancel);
             this.Controls.Add(this.LB_AddUser);
             this.Controls.Add(this.tableLayoutPanel1);

@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.PB_Deli = new System.Windows.Forms.PictureBox();
-            this.PB_Pastries = new System.Windows.Forms.PictureBox();
             this.LB_Deli = new System.Windows.Forms.Label();
             this.LB_Pastries = new System.Windows.Forms.Label();
             this.CB_HamSand = new System.Windows.Forms.CheckBox();
@@ -44,48 +42,27 @@
             this.CB_HChoolate = new System.Windows.Forms.CheckBox();
             this.CB_Coffee = new System.Windows.Forms.CheckBox();
             this.LB_HDrinks = new System.Windows.Forms.Label();
-            this.PB_HDrinks = new System.Windows.Forms.PictureBox();
             this.GB_Colddrinks = new System.Windows.Forms.GroupBox();
             this.CB_IceCoffe = new System.Windows.Forms.CheckBox();
             this.CB_Milkshake = new System.Windows.Forms.CheckBox();
             this.CB_Refreshers = new System.Windows.Forms.CheckBox();
             this.LB_CDrinks = new System.Windows.Forms.Label();
-            this.PB_CDrinks = new System.Windows.Forms.PictureBox();
             this.GB_Pastries = new System.Windows.Forms.GroupBox();
             this.GB_Deli = new System.Windows.Forms.GroupBox();
             this.PNL_Menu = new System.Windows.Forms.Panel();
-            this.BT_AddtoCart = new System.Windows.Forms.Button();
             this.BTN_Cancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Deli)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Pastries)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_HDrinks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_CDrinks)).BeginInit();
+            this.BT_AddtoCart = new System.Windows.Forms.Button();
+            this.PB_Pastries = new System.Windows.Forms.PictureBox();
+            this.PB_Deli = new System.Windows.Forms.PictureBox();
+            this.PB_CDrinks = new System.Windows.Forms.PictureBox();
+            this.PB_HDrinks = new System.Windows.Forms.PictureBox();
+            this.LB_Menu = new System.Windows.Forms.Label();
             this.PNL_Menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Pastries)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Deli)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_CDrinks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_HDrinks)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PB_Deli
-            // 
-            this.PB_Deli.BackColor = System.Drawing.Color.Transparent;
-            this.PB_Deli.Image = global::SunnyCornerCafeApp.Properties.Resources.Deli_Main;
-            this.PB_Deli.Location = new System.Drawing.Point(397, 458);
-            this.PB_Deli.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PB_Deli.Name = "PB_Deli";
-            this.PB_Deli.Size = new System.Drawing.Size(281, 195);
-            this.PB_Deli.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_Deli.TabIndex = 12;
-            this.PB_Deli.TabStop = false;
-            // 
-            // PB_Pastries
-            // 
-            this.PB_Pastries.BackColor = System.Drawing.Color.Transparent;
-            this.PB_Pastries.Image = global::SunnyCornerCafeApp.Properties.Resources.Pastries_Main;
-            this.PB_Pastries.Location = new System.Drawing.Point(40, 467);
-            this.PB_Pastries.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PB_Pastries.Name = "PB_Pastries";
-            this.PB_Pastries.Size = new System.Drawing.Size(281, 178);
-            this.PB_Pastries.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_Pastries.TabIndex = 13;
-            this.PB_Pastries.TabStop = false;
             // 
             // LB_Deli
             // 
@@ -93,7 +70,7 @@
             this.LB_Deli.BackColor = System.Drawing.Color.Transparent;
             this.LB_Deli.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Deli.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.LB_Deli.Location = new System.Drawing.Point(515, 433);
+            this.LB_Deli.Location = new System.Drawing.Point(524, 695);
             this.LB_Deli.Name = "LB_Deli";
             this.LB_Deli.Size = new System.Drawing.Size(47, 21);
             this.LB_Deli.TabIndex = 22;
@@ -105,7 +82,7 @@
             this.LB_Pastries.BackColor = System.Drawing.Color.Transparent;
             this.LB_Pastries.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Pastries.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.LB_Pastries.Location = new System.Drawing.Point(129, 433);
+            this.LB_Pastries.Location = new System.Drawing.Point(138, 695);
             this.LB_Pastries.Name = "LB_Pastries";
             this.LB_Pastries.Size = new System.Drawing.Size(90, 21);
             this.LB_Pastries.TabIndex = 23;
@@ -117,7 +94,7 @@
             this.CB_HamSand.BackColor = System.Drawing.Color.Transparent;
             this.CB_HamSand.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_HamSand.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_HamSand.Location = new System.Drawing.Point(491, 713);
+            this.CB_HamSand.Location = new System.Drawing.Point(500, 975);
             this.CB_HamSand.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_HamSand.Name = "CB_HamSand";
             this.CB_HamSand.Size = new System.Drawing.Size(106, 18);
@@ -131,7 +108,7 @@
             this.CB_Salad.BackColor = System.Drawing.Color.Transparent;
             this.CB_Salad.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Salad.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_Salad.Location = new System.Drawing.Point(491, 738);
+            this.CB_Salad.Location = new System.Drawing.Point(500, 1000);
             this.CB_Salad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_Salad.Name = "CB_Salad";
             this.CB_Salad.Size = new System.Drawing.Size(61, 18);
@@ -145,7 +122,7 @@
             this.CB_Panini.BackColor = System.Drawing.Color.Transparent;
             this.CB_Panini.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Panini.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_Panini.Location = new System.Drawing.Point(491, 688);
+            this.CB_Panini.Location = new System.Drawing.Point(500, 950);
             this.CB_Panini.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_Panini.Name = "CB_Panini";
             this.CB_Panini.Size = new System.Drawing.Size(60, 18);
@@ -159,7 +136,7 @@
             this.CB_Cake.BackColor = System.Drawing.Color.Transparent;
             this.CB_Cake.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Cake.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_Cake.Location = new System.Drawing.Point(133, 688);
+            this.CB_Cake.Location = new System.Drawing.Point(142, 950);
             this.CB_Cake.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_Cake.Name = "CB_Cake";
             this.CB_Cake.Size = new System.Drawing.Size(52, 18);
@@ -173,7 +150,7 @@
             this.CB_Cookie.BackColor = System.Drawing.Color.Transparent;
             this.CB_Cookie.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Cookie.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_Cookie.Location = new System.Drawing.Point(133, 713);
+            this.CB_Cookie.Location = new System.Drawing.Point(142, 975);
             this.CB_Cookie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_Cookie.Name = "CB_Cookie";
             this.CB_Cookie.Size = new System.Drawing.Size(63, 18);
@@ -187,7 +164,7 @@
             this.CB_Muffin.BackColor = System.Drawing.Color.Transparent;
             this.CB_Muffin.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Muffin.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_Muffin.Location = new System.Drawing.Point(133, 738);
+            this.CB_Muffin.Location = new System.Drawing.Point(142, 1000);
             this.CB_Muffin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_Muffin.Name = "CB_Muffin";
             this.CB_Muffin.Size = new System.Drawing.Size(61, 18);
@@ -209,7 +186,7 @@
             this.CB_Tea.BackColor = System.Drawing.Color.Transparent;
             this.CB_Tea.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Tea.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_Tea.Location = new System.Drawing.Point(133, 347);
+            this.CB_Tea.Location = new System.Drawing.Point(165, 573);
             this.CB_Tea.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_Tea.Name = "CB_Tea";
             this.CB_Tea.Size = new System.Drawing.Size(44, 18);
@@ -223,7 +200,7 @@
             this.CB_HChoolate.BackColor = System.Drawing.Color.Transparent;
             this.CB_HChoolate.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_HChoolate.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_HChoolate.Location = new System.Drawing.Point(133, 371);
+            this.CB_HChoolate.Location = new System.Drawing.Point(165, 597);
             this.CB_HChoolate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_HChoolate.Name = "CB_HChoolate";
             this.CB_HChoolate.Size = new System.Drawing.Size(103, 18);
@@ -237,7 +214,7 @@
             this.CB_Coffee.BackColor = System.Drawing.Color.Transparent;
             this.CB_Coffee.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Coffee.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_Coffee.Location = new System.Drawing.Point(133, 322);
+            this.CB_Coffee.Location = new System.Drawing.Point(165, 548);
             this.CB_Coffee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_Coffee.Name = "CB_Coffee";
             this.CB_Coffee.Size = new System.Drawing.Size(61, 18);
@@ -251,23 +228,11 @@
             this.LB_HDrinks.BackColor = System.Drawing.Color.Transparent;
             this.LB_HDrinks.Font = new System.Drawing.Font("Yu Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_HDrinks.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.LB_HDrinks.Location = new System.Drawing.Point(129, 10);
+            this.LB_HDrinks.Location = new System.Drawing.Point(161, 236);
             this.LB_HDrinks.Name = "LB_HDrinks";
             this.LB_HDrinks.Size = new System.Drawing.Size(120, 21);
             this.LB_HDrinks.TabIndex = 37;
             this.LB_HDrinks.Text = "HOT DRINKS";
-            // 
-            // PB_HDrinks
-            // 
-            this.PB_HDrinks.BackColor = System.Drawing.Color.Transparent;
-            this.PB_HDrinks.Image = global::SunnyCornerCafeApp.Properties.Resources.Hot_Drinks_Main;
-            this.PB_HDrinks.Location = new System.Drawing.Point(40, 67);
-            this.PB_HDrinks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PB_HDrinks.Name = "PB_HDrinks";
-            this.PB_HDrinks.Size = new System.Drawing.Size(281, 216);
-            this.PB_HDrinks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_HDrinks.TabIndex = 36;
-            this.PB_HDrinks.TabStop = false;
             // 
             // GB_Colddrinks
             // 
@@ -283,7 +248,7 @@
             this.CB_IceCoffe.BackColor = System.Drawing.Color.Transparent;
             this.CB_IceCoffe.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_IceCoffe.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_IceCoffe.Location = new System.Drawing.Point(491, 347);
+            this.CB_IceCoffe.Location = new System.Drawing.Point(523, 573);
             this.CB_IceCoffe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_IceCoffe.Name = "CB_IceCoffe";
             this.CB_IceCoffe.Size = new System.Drawing.Size(80, 18);
@@ -297,7 +262,7 @@
             this.CB_Milkshake.BackColor = System.Drawing.Color.Transparent;
             this.CB_Milkshake.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Milkshake.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_Milkshake.Location = new System.Drawing.Point(491, 371);
+            this.CB_Milkshake.Location = new System.Drawing.Point(523, 597);
             this.CB_Milkshake.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_Milkshake.Name = "CB_Milkshake";
             this.CB_Milkshake.Size = new System.Drawing.Size(79, 18);
@@ -311,7 +276,7 @@
             this.CB_Refreshers.BackColor = System.Drawing.Color.Transparent;
             this.CB_Refreshers.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Refreshers.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.CB_Refreshers.Location = new System.Drawing.Point(491, 321);
+            this.CB_Refreshers.Location = new System.Drawing.Point(523, 547);
             this.CB_Refreshers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CB_Refreshers.Name = "CB_Refreshers";
             this.CB_Refreshers.Size = new System.Drawing.Size(83, 18);
@@ -325,24 +290,11 @@
             this.LB_CDrinks.BackColor = System.Drawing.Color.Transparent;
             this.LB_CDrinks.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_CDrinks.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.LB_CDrinks.Location = new System.Drawing.Point(487, 10);
+            this.LB_CDrinks.Location = new System.Drawing.Point(519, 236);
             this.LB_CDrinks.Name = "LB_CDrinks";
             this.LB_CDrinks.Size = new System.Drawing.Size(123, 21);
             this.LB_CDrinks.TabIndex = 36;
             this.LB_CDrinks.Text = "COLD DRINKS";
-            // 
-            // PB_CDrinks
-            // 
-            this.PB_CDrinks.BackColor = System.Drawing.Color.Transparent;
-            this.PB_CDrinks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_CDrinks.Image = global::SunnyCornerCafeApp.Properties.Resources.Cold_Drink_Main;
-            this.PB_CDrinks.Location = new System.Drawing.Point(397, 85);
-            this.PB_CDrinks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PB_CDrinks.Name = "PB_CDrinks";
-            this.PB_CDrinks.Size = new System.Drawing.Size(281, 176);
-            this.PB_CDrinks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PB_CDrinks.TabIndex = 35;
-            this.PB_CDrinks.TabStop = false;
             // 
             // GB_Pastries
             // 
@@ -378,21 +330,6 @@
             this.PNL_Menu.Size = new System.Drawing.Size(831, 503);
             this.PNL_Menu.TabIndex = 42;
             // 
-            // BT_AddtoCart
-            // 
-            this.BT_AddtoCart.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.BT_AddtoCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_AddtoCart.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BT_AddtoCart.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.BT_AddtoCart.Location = new System.Drawing.Point(583, 803);
-            this.BT_AddtoCart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BT_AddtoCart.Name = "BT_AddtoCart";
-            this.BT_AddtoCart.Size = new System.Drawing.Size(137, 42);
-            this.BT_AddtoCart.TabIndex = 43;
-            this.BT_AddtoCart.Text = "Add to Cart";
-            this.BT_AddtoCart.UseVisualStyleBackColor = false;
-            this.BT_AddtoCart.Click += new System.EventHandler(this.BT_AddtoCart_Click);
-            // 
             // BTN_Cancel
             // 
             this.BTN_Cancel.Location = new System.Drawing.Point(616, 955);
@@ -403,14 +340,93 @@
             this.BTN_Cancel.UseVisualStyleBackColor = true;
             this.BTN_Cancel.Click += new System.EventHandler(this.BTN_Cancel_Click);
             // 
+            // BT_AddtoCart
+            // 
+            this.BT_AddtoCart.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.BT_AddtoCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_AddtoCart.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_AddtoCart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BT_AddtoCart.Location = new System.Drawing.Point(592, 1065);
+            this.BT_AddtoCart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BT_AddtoCart.Name = "BT_AddtoCart";
+            this.BT_AddtoCart.Size = new System.Drawing.Size(137, 42);
+            this.BT_AddtoCart.TabIndex = 43;
+            this.BT_AddtoCart.Text = "Add to Cart";
+            this.BT_AddtoCart.UseVisualStyleBackColor = false;
+            this.BT_AddtoCart.Click += new System.EventHandler(this.BT_AddtoCart_Click);
+            // 
+            // PB_Pastries
+            // 
+            this.PB_Pastries.BackColor = System.Drawing.Color.Transparent;
+            this.PB_Pastries.Image = global::SunnyCornerCafeApp.Properties.Resources.Pastries_Main;
+            this.PB_Pastries.Location = new System.Drawing.Point(49, 729);
+            this.PB_Pastries.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PB_Pastries.Name = "PB_Pastries";
+            this.PB_Pastries.Size = new System.Drawing.Size(281, 178);
+            this.PB_Pastries.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_Pastries.TabIndex = 13;
+            this.PB_Pastries.TabStop = false;
+            // 
+            // PB_Deli
+            // 
+            this.PB_Deli.BackColor = System.Drawing.Color.Transparent;
+            this.PB_Deli.Image = global::SunnyCornerCafeApp.Properties.Resources.Deli_Main;
+            this.PB_Deli.Location = new System.Drawing.Point(406, 720);
+            this.PB_Deli.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PB_Deli.Name = "PB_Deli";
+            this.PB_Deli.Size = new System.Drawing.Size(281, 195);
+            this.PB_Deli.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_Deli.TabIndex = 12;
+            this.PB_Deli.TabStop = false;
+            // 
+            // PB_CDrinks
+            // 
+            this.PB_CDrinks.BackColor = System.Drawing.Color.Transparent;
+            this.PB_CDrinks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PB_CDrinks.Image = global::SunnyCornerCafeApp.Properties.Resources.Cold_Drink_Main;
+            this.PB_CDrinks.Location = new System.Drawing.Point(429, 311);
+            this.PB_CDrinks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PB_CDrinks.Name = "PB_CDrinks";
+            this.PB_CDrinks.Size = new System.Drawing.Size(281, 176);
+            this.PB_CDrinks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_CDrinks.TabIndex = 35;
+            this.PB_CDrinks.TabStop = false;
+            // 
+            // PB_HDrinks
+            // 
+            this.PB_HDrinks.BackColor = System.Drawing.Color.Transparent;
+            this.PB_HDrinks.Image = global::SunnyCornerCafeApp.Properties.Resources.Hot_Drinks_Main;
+            this.PB_HDrinks.Location = new System.Drawing.Point(72, 293);
+            this.PB_HDrinks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PB_HDrinks.Name = "PB_HDrinks";
+            this.PB_HDrinks.Size = new System.Drawing.Size(281, 216);
+            this.PB_HDrinks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_HDrinks.TabIndex = 36;
+            this.PB_HDrinks.TabStop = false;
+            // 
+            // LB_Menu
+            // 
+            this.LB_Menu.AutoSize = true;
+            this.LB_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LB_Menu.Font = new System.Drawing.Font("French Script MT", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Menu.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.LB_Menu.Image = global::SunnyCornerCafeApp.Properties.Resources.AdobeStock_264140149;
+            this.LB_Menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LB_Menu.Location = new System.Drawing.Point(112, 49);
+            this.LB_Menu.Name = "LB_Menu";
+            this.LB_Menu.Size = new System.Drawing.Size(589, 109);
+            this.LB_Menu.TabIndex = 44;
+            this.LB_Menu.Text = "--- M E N U ---";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.BackgroundImage = global::SunnyCornerCafeApp.Properties.Resources.Cocktails_London_jpg;
-            this.ClientSize = new System.Drawing.Size(749, 508);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(800, 566);
+            this.Controls.Add(this.LB_Menu);
             this.Controls.Add(this.CB_Muffin);
             this.Controls.Add(this.CB_Cookie);
             this.Controls.Add(this.CB_Cake);
@@ -439,11 +455,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Deli)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_Pastries)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_HDrinks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_CDrinks)).EndInit();
             this.PNL_Menu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Pastries)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Deli)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_CDrinks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_HDrinks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -477,5 +493,6 @@
         private System.Windows.Forms.Panel PNL_Menu;
         private System.Windows.Forms.Button BT_AddtoCart;
         private System.Windows.Forms.Button BTN_Cancel;
+        private System.Windows.Forms.Label LB_Menu;
     }
 }

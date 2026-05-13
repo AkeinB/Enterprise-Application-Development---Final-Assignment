@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserInformation));
             this.PB_UserPicture = new System.Windows.Forms.PictureBox();
             this.LB_Username = new System.Windows.Forms.Label();
             this.TB_Name = new System.Windows.Forms.TextBox();
@@ -48,11 +49,12 @@
             // 
             // PB_UserPicture
             // 
+            this.PB_UserPicture.BackColor = System.Drawing.Color.Transparent;
             this.PB_UserPicture.Image = global::SunnyCornerCafeApp.Properties.Resources._292_2924858_user_icon_business_man_flat_png_transparent_png;
-            this.PB_UserPicture.Location = new System.Drawing.Point(13, 58);
+            this.PB_UserPicture.Location = new System.Drawing.Point(30, 50);
             this.PB_UserPicture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PB_UserPicture.Name = "PB_UserPicture";
-            this.PB_UserPicture.Size = new System.Drawing.Size(193, 231);
+            this.PB_UserPicture.Size = new System.Drawing.Size(217, 211);
             this.PB_UserPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_UserPicture.TabIndex = 0;
             this.PB_UserPicture.TabStop = false;
@@ -60,17 +62,17 @@
             // LB_Username
             // 
             this.LB_Username.AutoSize = true;
-            this.LB_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_Username.Location = new System.Drawing.Point(56, 307);
+            this.LB_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Username.Location = new System.Drawing.Point(88, 277);
             this.LB_Username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Username.Name = "LB_Username";
-            this.LB_Username.Size = new System.Drawing.Size(101, 17);
+            this.LB_Username.Size = new System.Drawing.Size(106, 16);
             this.LB_Username.TabIndex = 1;
             this.LB_Username.Text = "-- Username --";
             // 
             // TB_Name
             // 
-            this.TB_Name.Location = new System.Drawing.Point(238, 122);
+            this.TB_Name.Location = new System.Drawing.Point(299, 50);
             this.TB_Name.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TB_Name.Name = "TB_Name";
             this.TB_Name.ReadOnly = true;
@@ -80,7 +82,9 @@
             // LB_Name
             // 
             this.LB_Name.AutoSize = true;
-            this.LB_Name.Location = new System.Drawing.Point(234, 105);
+            this.LB_Name.BackColor = System.Drawing.Color.Transparent;
+            this.LB_Name.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.LB_Name.Location = new System.Drawing.Point(295, 33);
             this.LB_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Name.Name = "LB_Name";
             this.LB_Name.Size = new System.Drawing.Size(40, 14);
@@ -89,7 +93,7 @@
             // 
             // TB_Email
             // 
-            this.TB_Email.Location = new System.Drawing.Point(238, 213);
+            this.TB_Email.Location = new System.Drawing.Point(299, 185);
             this.TB_Email.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TB_Email.Name = "TB_Email";
             this.TB_Email.ReadOnly = true;
@@ -98,7 +102,7 @@
             // 
             // TB_TelephoneNumber
             // 
-            this.TB_TelephoneNumber.Location = new System.Drawing.Point(519, 122);
+            this.TB_TelephoneNumber.Location = new System.Drawing.Point(299, 119);
             this.TB_TelephoneNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TB_TelephoneNumber.Name = "TB_TelephoneNumber";
             this.TB_TelephoneNumber.ReadOnly = true;
@@ -107,7 +111,7 @@
             // 
             // TB_Address
             // 
-            this.TB_Address.Location = new System.Drawing.Point(238, 304);
+            this.TB_Address.Location = new System.Drawing.Point(299, 250);
             this.TB_Address.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TB_Address.Name = "TB_Address";
             this.TB_Address.ReadOnly = true;
@@ -117,7 +121,9 @@
             // LB_Email
             // 
             this.LB_Email.AutoSize = true;
-            this.LB_Email.Location = new System.Drawing.Point(234, 195);
+            this.LB_Email.BackColor = System.Drawing.Color.Transparent;
+            this.LB_Email.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.LB_Email.Location = new System.Drawing.Point(295, 167);
             this.LB_Email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Email.Name = "LB_Email";
             this.LB_Email.Size = new System.Drawing.Size(92, 14);
@@ -127,7 +133,9 @@
             // LB_Address
             // 
             this.LB_Address.AutoSize = true;
-            this.LB_Address.Location = new System.Drawing.Point(234, 287);
+            this.LB_Address.BackColor = System.Drawing.Color.Transparent;
+            this.LB_Address.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.LB_Address.Location = new System.Drawing.Point(295, 233);
             this.LB_Address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Address.Name = "LB_Address";
             this.LB_Address.Size = new System.Drawing.Size(55, 14);
@@ -137,7 +145,9 @@
             // LB_Telephone
             // 
             this.LB_Telephone.AutoSize = true;
-            this.LB_Telephone.Location = new System.Drawing.Point(515, 105);
+            this.LB_Telephone.BackColor = System.Drawing.Color.Transparent;
+            this.LB_Telephone.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.LB_Telephone.Location = new System.Drawing.Point(295, 102);
             this.LB_Telephone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Telephone.Name = "LB_Telephone";
             this.LB_Telephone.Size = new System.Drawing.Size(116, 14);
@@ -147,7 +157,9 @@
             // LB_CDate
             // 
             this.LB_CDate.AutoSize = true;
-            this.LB_CDate.Location = new System.Drawing.Point(515, 195);
+            this.LB_CDate.BackColor = System.Drawing.Color.Transparent;
+            this.LB_CDate.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.LB_CDate.Location = new System.Drawing.Point(296, 295);
             this.LB_CDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_CDate.Name = "LB_CDate";
             this.LB_CDate.Size = new System.Drawing.Size(86, 14);
@@ -156,10 +168,11 @@
             // 
             // BT_Close
             // 
-            this.BT_Close.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BT_Close.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.BT_Close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BT_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_Close.Font = new System.Drawing.Font("Yu Gothic Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BT_Close.Location = new System.Drawing.Point(367, 384);
+            this.BT_Close.Location = new System.Drawing.Point(243, 394);
             this.BT_Close.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BT_Close.Name = "BT_Close";
             this.BT_Close.Size = new System.Drawing.Size(153, 35);
@@ -170,7 +183,7 @@
             // 
             // TB_CreateDate
             // 
-            this.TB_CreateDate.Location = new System.Drawing.Point(519, 213);
+            this.TB_CreateDate.Location = new System.Drawing.Point(300, 313);
             this.TB_CreateDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TB_CreateDate.Name = "TB_CreateDate";
             this.TB_CreateDate.ReadOnly = true;
@@ -179,12 +192,13 @@
             // 
             // BT_Edit
             // 
-            this.BT_Edit.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BT_Edit.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.BT_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_Edit.Font = new System.Drawing.Font("Yu Gothic Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BT_Edit.Location = new System.Drawing.Point(204, 384);
+            this.BT_Edit.Location = new System.Drawing.Point(430, 394);
             this.BT_Edit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BT_Edit.Name = "BT_Edit";
-            this.BT_Edit.Size = new System.Drawing.Size(134, 35);
+            this.BT_Edit.Size = new System.Drawing.Size(153, 35);
             this.BT_Edit.TabIndex = 15;
             this.BT_Edit.Text = "Edit";
             this.BT_Edit.UseVisualStyleBackColor = false;
@@ -192,10 +206,11 @@
             // 
             // BTN_EditPassword
             // 
-            this.BTN_EditPassword.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN_EditPassword.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.BTN_EditPassword.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BTN_EditPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_EditPassword.Font = new System.Drawing.Font("Yu Gothic Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_EditPassword.Location = new System.Drawing.Point(541, 384);
+            this.BTN_EditPassword.Location = new System.Drawing.Point(41, 394);
             this.BTN_EditPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BTN_EditPassword.Name = "BTN_EditPassword";
             this.BTN_EditPassword.Size = new System.Drawing.Size(153, 35);
@@ -209,8 +224,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.BackgroundImage = global::SunnyCornerCafeApp.Properties.Resources.Drop2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.BT_Close;
-            this.ClientSize = new System.Drawing.Size(769, 472);
+            this.ClientSize = new System.Drawing.Size(638, 472);
             this.Controls.Add(this.BTN_EditPassword);
             this.Controls.Add(this.BT_Edit);
             this.Controls.Add(this.TB_CreateDate);
@@ -226,8 +243,10 @@
             this.Controls.Add(this.TB_Name);
             this.Controls.Add(this.LB_Username);
             this.Controls.Add(this.PB_UserPicture);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Yu Gothic Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Black;
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "UserInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

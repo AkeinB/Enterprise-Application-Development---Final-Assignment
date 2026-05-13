@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditPassword));
             this.LB_OldPassword = new System.Windows.Forms.Label();
             this.TB_OldPassword = new System.Windows.Forms.TextBox();
             this.TB_NewPassword = new System.Windows.Forms.TextBox();
@@ -36,6 +37,7 @@
             this.LB_ConfirmNewPassword = new System.Windows.Forms.Label();
             this.BTN_Submit = new System.Windows.Forms.Button();
             this.BTN_Close = new System.Windows.Forms.Button();
+            this.LB_EditPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LB_OldPassword
@@ -99,8 +101,8 @@
             // 
             this.BTN_Submit.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.BTN_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Submit.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Submit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BTN_Submit.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Submit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BTN_Submit.Location = new System.Drawing.Point(82, 339);
             this.BTN_Submit.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_Submit.Name = "BTN_Submit";
@@ -114,8 +116,8 @@
             // 
             this.BTN_Close.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Close.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BTN_Close.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BTN_Close.Location = new System.Drawing.Point(217, 339);
             this.BTN_Close.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_Close.Name = "BTN_Close";
@@ -125,13 +127,24 @@
             this.BTN_Close.UseVisualStyleBackColor = false;
             this.BTN_Close.Click += new System.EventHandler(this.BTN_Close_Click);
             // 
+            // LB_EditPassword
+            // 
+            this.LB_EditPassword.AutoSize = true;
+            this.LB_EditPassword.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_EditPassword.Location = new System.Drawing.Point(64, 29);
+            this.LB_EditPassword.Name = "LB_EditPassword";
+            this.LB_EditPassword.Size = new System.Drawing.Size(300, 42);
+            this.LB_EditPassword.TabIndex = 8;
+            this.LB_EditPassword.Text = "Change Password";
+            // 
             // EditPassword
             // 
             this.AcceptButton = this.BTN_Submit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(420, 427);
+            this.Controls.Add(this.LB_EditPassword);
             this.Controls.Add(this.BTN_Close);
             this.Controls.Add(this.BTN_Submit);
             this.Controls.Add(this.TB_ConfirmNewPassword);
@@ -142,6 +155,7 @@
             this.Controls.Add(this.LB_OldPassword);
             this.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EditPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -161,5 +175,6 @@
         private System.Windows.Forms.Label LB_ConfirmNewPassword;
         private System.Windows.Forms.Button BTN_Submit;
         private System.Windows.Forms.Button BTN_Close;
+        private System.Windows.Forms.Label LB_EditPassword;
     }
 }

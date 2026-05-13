@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Orders));
             this.LB_Orders = new System.Windows.Forms.Label();
             this.GV_OrderList = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -40,7 +41,9 @@
             // LB_Orders
             // 
             this.LB_Orders.AutoSize = true;
+            this.LB_Orders.BackColor = System.Drawing.Color.Transparent;
             this.LB_Orders.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Orders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.LB_Orders.Location = new System.Drawing.Point(200, 15);
             this.LB_Orders.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Orders.Name = "LB_Orders";
@@ -54,7 +57,7 @@
             this.GV_OrderList.AllowUserToDeleteRows = false;
             this.GV_OrderList.AllowUserToResizeColumns = false;
             this.GV_OrderList.AllowUserToResizeRows = false;
-            this.GV_OrderList.BackgroundColor = System.Drawing.Color.PaleGoldenrod;
+            this.GV_OrderList.BackgroundColor = System.Drawing.Color.Cornsilk;
             this.GV_OrderList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GV_OrderList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GV_OrderList.Location = new System.Drawing.Point(31, 60);
@@ -79,26 +82,32 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.button2.Location = new System.Drawing.Point(187, 16);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(105, 41);
             this.button2.TabIndex = 5;
             this.button2.Text = "Cancel Order";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // BTN_NewOrder
             // 
+            this.BTN_NewOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BTN_NewOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_NewOrder.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_NewOrder.ForeColor = System.Drawing.Color.PaleGoldenrod;
             this.BTN_NewOrder.Location = new System.Drawing.Point(58, 16);
             this.BTN_NewOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BTN_NewOrder.Name = "BTN_NewOrder";
             this.BTN_NewOrder.Size = new System.Drawing.Size(105, 41);
             this.BTN_NewOrder.TabIndex = 4;
             this.BTN_NewOrder.Text = "New Order";
-            this.BTN_NewOrder.UseVisualStyleBackColor = true;
+            this.BTN_NewOrder.UseVisualStyleBackColor = false;
             this.BTN_NewOrder.Click += new System.EventHandler(this.BTN_NewOrder_Click);
             // 
             // Orders
@@ -106,11 +115,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.BackgroundImage = global::SunnyCornerCafeApp.Properties.Resources.Drop1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(560, 485);
             this.Controls.Add(this.LB_Orders);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GV_OrderList);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Orders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

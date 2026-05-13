@@ -118,43 +118,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cafe-bar_V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cafe-bar_V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Drop1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Drop1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cold-Drink-Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cold-Drink-Main.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Deli-Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Deli-Main.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="latte" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\latte1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AdobeStock_264140149" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AdobeStock_2641401491.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dark-coffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dark-coffee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="292-2924858_user-icon-business-man-flat-png-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\292-2924858_user-icon-business-man-flat-png-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cocktails London-jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cocktails London-jpg.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hot-Drinks-Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hot-Drinks-Main.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sunny_corner_Cafe_logo_V1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sunny_corner_Cafe_logo_V1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pastries-Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pastries-Main.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cold-Drink-Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cold-Drink-Main.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="coffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sunny_corner_cafe_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sunny_corner_cafe_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hot-Drinks-Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hot-Drinks-Main.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="latte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\latte1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sunny_corner_Cafe_logo_V1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sunny_corner_Cafe_logo_V1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iced-mocha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iced-mocha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pastries-Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pastries-Main.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cafe-bar_V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cafe-bar_V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sandwich" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sandwich.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Drop2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Drop2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="292-2924858_user-icon-business-man-flat-png-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\292-2924858_user-icon-business-man-flat-png-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cocktails_London" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cocktails_London.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark-coffee.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark-coffee.png.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
