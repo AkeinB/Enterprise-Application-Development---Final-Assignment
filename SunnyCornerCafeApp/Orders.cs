@@ -80,7 +80,7 @@ namespace SunnyCornerCafeApp
         public void PopulateGrid()
         {
             var orders = sunnyDB.Orders
-                .Where(o => o.UserId == _userInfo.id)   // only this user's orders
+                .Where(o => o.UserId == _userInfo.id)  
                 .Select(o => new
                 {
                     o.id,
