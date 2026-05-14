@@ -15,11 +15,13 @@ namespace SunnyCornerCafeApp
     {
         private readonly SunnyCornerCafeWebsite_DBEntities sunnyDB;
         private readonly User _userInfo;
-        public UserInformation(User user)
+        private MainWindow _mainWindow;
+        public UserInformation(User user, MainWindow main)
         {
             InitializeComponent();
             sunnyDB = new SunnyCornerCafeWebsite_DBEntities();
             _userInfo = user;
+            _mainWindow = main;
             PopulateField();
         }
 
@@ -106,7 +108,7 @@ namespace SunnyCornerCafeApp
                 MessageBox.Show("No user information available.");
                 return;
             }
-            var editPassword = new EditPassword(_userInfo.id);
+            var editPassword = new EditPassword(_userInfo.id, _mainWindow);
             editPassword.ShowDialog();
         }
     }

@@ -146,7 +146,7 @@ namespace SunnyCornerCafeApp
         {
             if (!Utils.FormIsOpen("UserInformation"))
             {
-                var profile = new UserInformation(_user);
+                var profile = new UserInformation(_user, this);
                 profile.Show();
             }
         }

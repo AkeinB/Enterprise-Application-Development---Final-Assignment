@@ -54,7 +54,7 @@ namespace SunnyCornerCafeApp
                 }
                 if (CB_Milkshake.Checked)
                 {
-                    var product = sunnyDB.Products.FirstOrDefault(p => p.Name == "Milkhake");
+                    var product = sunnyDB.Products.FirstOrDefault(p => p.Name == "Milkshake");
                     sunnyDB.Carts.Add(new Cart { UserId = userId, ProductId = product.id, Quantity = 1 });
                 }
                 if (CB_Refreshers.Checked)
@@ -64,7 +64,7 @@ namespace SunnyCornerCafeApp
                 }
                 if (CB_HamSand.Checked)
                 {
-                    var product = sunnyDB.Products.FirstOrDefault(p => p.Name == "Hand Sandwhich");
+                    var product = sunnyDB.Products.FirstOrDefault(p => p.Name == "Ham Sandwhich");
                     sunnyDB.Carts.Add(new Cart { UserId = userId, ProductId = product.id, Quantity = 1 });
                 }
                 if (CB_Panini.Checked)
